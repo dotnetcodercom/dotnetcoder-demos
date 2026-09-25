@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20260925-ANGULAR",
+  "repository_path": "angular-22-error-boundaries",
+  "source_sha256": "40d0ba24ab9406f153bf57bf139ae6f3ac53f156614ddc6e7312c9ba92089372",
+  "article_url": "https://dotnetcoder.com/angular-22-error-boundaries/",
+  "files": [
+    "angular.json",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "public/favicon.ico",
+    "README.md",
+    "src/app/app.config.ts",
+    "src/app/app.spec.ts",
+    "src/app/app.ts",
+    "src/index.html",
+    "src/main.ts",
+    "src/styles.css",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.spec.json"
+  ]
+}
