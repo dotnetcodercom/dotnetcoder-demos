@@ -1,0 +1,28 @@
+@{
+    // Reading TempData consumes these keys at the end of the request.
+    // Do not call Peek or Keep for a one-time notification.
+    var toastMessage = TempData["ToastMessage"] as string;
+    var toastKind = TempData["ToastKind"] as string;
+    var toastClass = toastKind == "error" ? "toast--error" : "toast--success";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <main>
+        @RenderBody()
+    </main>
+    @if (!string.IsNullOrEmpty(toastMessage))
+    {
+        <div class="toast @toastClass" role="status" aria-live="polite" data-proof-toast>
+            <span>@toastMessage</span>
+            <button type="button" aria-label="Dismiss notification" onclick="this.parentElement.remove()">×</button>
+        </div>
+    }
+</body>
+</html>

@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "MVC TempData toast proof";
+}
+
+<h1>MVC toast after POST → Redirect → GET</h1>
+<p>This demo simulates saving a name. It does not write to a database.</p>
+
+<form asp-controller="Home" asp-action="Save" asp-antiforgery="false" method="post">
+    @Html.AntiForgeryToken()
+    <label for="name">Name</label>
+    <input id="name" name="name" autocomplete="off" />
+    <button type="submit">Simulate save</button>
+</form>
+
+<p>After submitting, reload the resulting page. The notice should not return.</p>

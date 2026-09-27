@@ -1,0 +1,18 @@
+User-run local proof, 2026-09-27, Windows with .NET 10.
+App command: dotnet run --no-launch-profile --urls http://127.0.0.1:5127
+Runner command: dotnet run --project .\ProofRunner\ProofRunner.csproj
+
+PASS: Initial GET has no toast
+PASS: Antiforgery input exists
+PASS: Antiforgery input has a value
+PASS: POST returns 302
+PASS: Redirect has a Location
+PASS: Redirected GET has one toast
+PASS: Untrusted name is HTML encoded
+PASS: No raw script in output
+PASS: Refresh has no toast
+PASS: initial GET, antiforgery, POST 302, one redirected toast, encoded input, no toast after refresh
+
+The provided browser captures are screenshots/after-submit.png and screenshots/after-refresh.png.
+The Save action simulates persistence. This evidence does not prove a database save,
+distributed deployment, or screen-reader announcements.
