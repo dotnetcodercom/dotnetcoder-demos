@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20260927-MVC-TOAST",
+  "repository_path": "mvc-tempdata-toast-20260927",
+  "source_sha256": "21a5a94e5bcedc35024f603a5239e1474037dde118d33d5adfa0bb91dc589d2b",
+  "article_url": "https://dotnetcoder.com/aspnet-core-mvc-toast-after-redirect-tempdata/",
+  "files": [
+    "Controllers/HomeController.cs",
+    "LICENSE",
+    "MvcToastProof.csproj",
+    "Program.cs",
+    "proof-evidence.txt",
+    "ProofRunner/Program.cs",
+    "ProofRunner/ProofRunner.csproj",
+    "README.md",
+    "screenshots/after-refresh.png",
+    "screenshots/after-submit.png",
+    "Views/_ViewImports.cshtml",
+    "Views/_ViewStart.cshtml",
+    "Views/Home/Index.cshtml",
+    "Views/Shared/_Layout.cshtml",
+    "wwwroot/css/site.css"
+  ]
+}
