@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20260927-1714-C01",
+  "repository_path": "aspnetcore10-handled-exception-metrics-20260927",
+  "source_sha256": "92a37b7190ae2013eaf21cea318053883c577779938114918118498f5ffa2d37",
+  "article_url": "https://dotnetcoder.com/aspnetcore10-handled-exception-metrics/",
+  "files": [
+    ".gitignore",
+    "DncExceptionMetricsProof.csproj",
+    "LICENSE",
+    "Program.cs",
+    "README.md"
+  ]
+}
