@@ -9,13 +9,21 @@ var port = ((IPEndPoint)listener.LocalEndpoint).Port;
 listener.Stop();
 var baseUri = new Uri($"http://127.0.0.1:{port}/");
 
+using var build = Process.Start(new ProcessStartInfo("dotnet")
+{
+    WorkingDirectory = Directory.GetCurrentDirectory(),
+    ArgumentList = { "build", "MvcToastProof.csproj", "--nologo" },
+    UseShellExecute = false
+}) ?? throw new Exception("Could not build the MVC application.");
+await build.WaitForExitAsync();
+if (build.ExitCode != 0) throw new Exception($"MVC build failed: {build.ExitCode}");
+
 using var server = Process.Start(new ProcessStartInfo("dotnet")
 {
     WorkingDirectory = Directory.GetCurrentDirectory(),
     ArgumentList =
     {
-        "run", "--project", "MvcToastProof.csproj", "--no-launch-profile",
-        "--urls", baseUri.ToString().TrimEnd('/')
+        "bin/Debug/net10.0/MvcToastProof.dll", "--urls", baseUri.ToString().TrimEnd('/')
     },
     UseShellExecute = false
 }) ?? throw new Exception("Could not start the MVC application.");
