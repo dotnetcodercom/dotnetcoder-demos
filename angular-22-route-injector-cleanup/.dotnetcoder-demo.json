@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-PROD-20260928-0900",
+  "repository_path": "angular-22-route-injector-cleanup",
+  "source_sha256": "fe57aa5ffdf922204550725cf2f93155b5f9802f73ba8b5e32eb07f2f3ec55a0",
+  "article_url": "https://dotnetcoder.com/angular-22-route-injector-cleanup/",
+  "files": [
+    "angular.json",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "public/favicon.ico",
+    "README.md",
+    "src/app/app.config.ts",
+    "src/app/app.spec.ts",
+    "src/app/app.ts",
+    "src/index.html",
+    "src/main.ts",
+    "src/styles.css",
+    "tsconfig.app.json",
+    "tsconfig.json",
+    "tsconfig.spec.json"
+  ]
+}
