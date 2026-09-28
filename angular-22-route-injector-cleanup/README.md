@@ -2,9 +2,13 @@
 
 This small Angular app tests the lifetime of a service provided by a route. It uses Angular 22.2.0 and `withAutoCleanupInjectors()`.
 
-## Run
+Companion article: https://dotnetcoder.com/angular-22-route-injector-cleanup/
+
+## Prerequisites
 
 Requires Node.js 20.19+ and npm.
+
+## Run
 
 ```bash
 npm ci
