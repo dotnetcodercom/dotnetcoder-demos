@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "verified_on": "2026-09-30 Europe/Stockholm",
+  "evidence_type": "User-provided screenshots of Windows PowerShell execution; not agent-side SQL execution",
+  "sdk": "11.0.100-rc.1.26425.128",
+  "runtime": "11.0.0",
+  "ef_package_pinned": "11.0.0-rc.1.26425.128",
+  "sql_server_version": "17.0.1000.7",
+  "instance": "(localdb)\\DNC2025",
+  "sql_storage_type": "nvarchar(max)",
+  "ef_translation_compatibility_level": 160,
+  "checks": {
+    "restore_and_release_build": "PASS",
+    "json_path_exists_capability": "PASS",
+    "main_nested_negated_translation": "PASS",
+    "raw_sql_missing_json_null_sql_null": "PASS",
+    "existing_optional_int": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "missing_optional_int": [
+      1,
+      6,
+      8
+    ],
+    "nested_flag": [
+      6
+    ],
+    "nested_path": [
+      6,
+      8
+    ],
+    "different_case": [],
+    "sql_null_document": [
+      7
+    ],
+    "transaction_rollback": "PASS",
+    "final_proof_completion": "PASS",
+    "final_laptop_verification": "PASS"
+  },
+  "limitations": [
+    "No full text transcript file uploaded; evidence is inspected screenshots.",
+    "Actual test was SQL Server 2025 LocalDB; SQL Server 2022 not independently executed.",
+    "No native json, performance, indexing, Azure SQL or owned/complex mapping proof."
+  ],
+  "screenshot_audit": "evidence/screenshot-qa.json"
+}

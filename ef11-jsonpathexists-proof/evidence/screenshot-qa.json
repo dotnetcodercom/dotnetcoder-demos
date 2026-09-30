@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "method": "Contiguous pixel crop only; no compositing, text replacement, rescaling or generated output.",
+  "screenshots": [
+    {
+      "source_name": "image(20260930-182737).png",
+      "source_sha256": "ae9c33fddf9c1cda20a6fee29c2fd4e813cd039f29d6eabbf84e990b77ff7405",
+      "crop_box_ltrb": [
+        0,
+        84,
+        1500,
+        705
+      ],
+      "output": "evidence/screenshots/build-and-sql-version.png",
+      "output_dimensions": [
+        1500,
+        621
+      ],
+      "output_sha256": "91d9dd6fd380058f44fdd8d7827d3d558977079c22a00d6e7f87157f4c3bf260",
+      "caption": "Restore/build, selected SDK and actual SQL Server engine version.",
+      "pixel_equality": "PASS"
+    },
+    {
+      "source_name": "image(20260930-182801).png",
+      "source_sha256": "73ba84fdfec2f7225ddaabbaf2f2f5490452349477adc46904c8bd258d967154",
+      "crop_box_ltrb": [
+        0,
+        25,
+        1300,
+        538
+      ],
+      "output": "evidence/screenshots/generated-sql-and-null-comparison.png",
+      "output_dimensions": [
+        1300,
+        513
+      ],
+      "output_sha256": "8732c7795718718bd5bade8e3819e6a89b5d3526dd52b9560a66b4768b96f284",
+      "caption": "Generated EF SQL and missing/JSON null/SQL NULL comparison.",
+      "pixel_equality": "PASS"
+    },
+    {
+      "source_name": "image(20260930-182812).png",
+      "source_sha256": "f716ce9e26457644506433f2f71fe46410cc1237dd3a20e8f32b2fbddafd34a8",
+      "crop_box_ltrb": [
+        0,
+        10,
+        1200,
+        323
+      ],
+      "output": "evidence/screenshots/ef-results-and-rollback-pass.png",
+      "output_dimensions": [
+        1200,
+        313
+      ],
+      "output_sha256": "844c1cdf72aa2248d94a2aa5fe15e82b3e702c95702d585513388d2d4e352bbb",
+      "caption": "Six EF query results, rollback and final verification PASS.",
+      "pixel_equality": "PASS"
+    }
+  ],
+  "unused_upload": {
+    "name": "image(20260930-182709).png",
+    "reason": "Instance setup repeated by runtime version screenshot; includes personal local paths."
+  }
+}

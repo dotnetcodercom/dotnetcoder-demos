@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-09-30T16:27:55.598602+00:00",
+  "status": "LAPTOP_VERIFIED_SCREENSHOTS_READY",
+  "sdk": "11.0.100-rc.1.26425.128",
+  "ef_sqlserver_package": "11.0.0-rc.1.26425.128",
+  "local_checks": {
+    "restore": "PASS",
+    "release_build": "PASS: 0 warnings, 0 errors",
+    "offline_translation": "PASS: main, nested, negated",
+    "missing_connection_guard": "PASS: nonzero exit without connection",
+    "laptop_restore_and_release_build": "PASS: user transcript on 2026-09-30, SDK 11.0.100-rc.1.26425.128",
+    "windows_powershell_script_execution": "PASS: user screenshots show fixed script completed on Windows",
+    "sql_server_execution": "PASS: SQL Server 2025 LocalDB 17.0.1000.7, six EF assertions, raw SQL assertions and rollback",
+    "screenshots": "PASS: three contiguous pixel crops verified against uploads"
+  },
+  "pending": {
+    "sql_server_2022_execution": "NOT_RUN: tested on SQL Server 2025; documented minimum is 2022",
+    "full_text_laptop_transcript": "NOT_UPLOADED: screenshots are the current evidence"
+  },
+  "scope": "Text JSON in nvarchar(max); tempdb local temporary table with rollback; no performance/native-json/deployment claims",
+  "source_sha256": {
+    "global.json": "b1b2536e45587b4625592903a8b172d5ec94b54171409e93a6f782e3e061c893",
+    "README.md": "2b705c210a0cfda171d1c83f2ff0e1348a918a75e78a2a72f027cd86cd03a112",
+    "README-AR.md": "4aa6ec51e2581ceeb061cb1a555f3446cd40cfb38b8ba6dccfdf6ca9fa72a3d0",
+    "Verify-JsonPathExists.ps1": "6e044205a38060cd0cafef9232329fa97f7cdd39c7f4bd35933c4f28f27819e9",
+    "Program.cs": "24c377bc87e0b944ce55404a11d4029129d6639a0367a537b49a22a0a8b7586e",
+    "JsonPathProof.csproj": "14c45caaa97d7b142b65f10083217ab1744c05f4bf1be1e90def5a9e58e24125",
+    "Verify-Saved-Proof.mjs": "9b65dd21c279bd8d8f6a9184e25d7d4ba16231b7d8fb3cf96e2071d1b7048dc3",
+    ".gitignore": "9fc25dc8731a8e7b1fe94809becff87286024eedeacc43e573f63feedf1fa6f9",
+    "LICENSE": "d9ef5953a25ac7ba883d716e7360718ff786e17dd2f7a4f682dbebdbfee9fdec",
+    "NuGet.Config": "aec93b5637ab6d62470979a008990a4a336a287ab83a3f2541849ae735674055",
+    "evidence/offline-translation.txt": "315a87d5c7795314c9ad7ac581cda4caacb33be9b26103e9735fe4623e333da6",
+    "evidence/laptop-verification.json": "024a836403e0bafd22425a67706d4741495e523088ae544a7bc972f52a938666",
+    "evidence/screenshot-qa.json": "2eaeac188365a4b0fcbe96e0c36769c26f0cb54f0ec8cc1a842896dd1b7e53eb",
+    "evidence/screenshots/ef-results-and-rollback-pass.png": "844c1cdf72aa2248d94a2aa5fe15e82b3e702c95702d585513388d2d4e352bbb",
+    "evidence/screenshots/build-and-sql-version.png": "91d9dd6fd380058f44fdd8d7827d3d558977079c22a00d6e7f87157f4c3bf260",
+    "evidence/screenshots/generated-sql-and-null-comparison.png": "8732c7795718718bd5bade8e3819e6a89b5d3526dd52b9560a66b4768b96f284"
+  },
+  "correction": {
+    "date": "2026-09-30",
+    "issue": "Windows PowerShell: Keyword not supported: 'DataSource'",
+    "fix": "Use keyword indexers and get_ConnectionString(); successful laptop rerun recorded in evidence/laptop-verification.json."
+  },
+  "laptop_verification": "evidence/laptop-verification.json"
+}

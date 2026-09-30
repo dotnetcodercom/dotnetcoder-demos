@@ -1,0 +1,12 @@
+=== EF Core 11 JsonPathExists proof ===
+Runtime: 11.0.0
+EF Core: 11.0.0.0
+
+--- Generated SQL for the main EF query ---
+SELECT [#].[Id], [#].[JsonData], [#].[Name]
+FROM [#DncJsonPathProof] AS [#]
+WHERE [#].[JsonData] IS NOT NULL AND JSON_PATH_EXISTS([#].[JsonData], N'$.OptionalInt') = 1
+ORDER BY [#].[Id]
+PASS: main, nested and negated LINQ queries translate to JSON_PATH_EXISTS
+PASS: offline SQL translation checks completed
+OFFLINE ONLY: no SQL Server connection or result verification was performed.
