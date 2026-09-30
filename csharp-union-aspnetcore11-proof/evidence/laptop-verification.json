@@ -1,0 +1,105 @@
+{
+  "status": "PASS_CONFIRMED_FROM_USER_SCREENSHOTS",
+  "reviewedAtUtc": "2026-09-30T21:51:40.059960+00:00",
+  "sdk": "11.0.100-rc.1.26425.128",
+  "runtime": ".NET 11.0.0-rc.1.26425.128",
+  "aspNetCoreAssemblyVersion": "11.0.0.0",
+  "reportedOperatingSystem": "Microsoft Windows 10.0.26200",
+  "checksPassed": 23,
+  "completionMarkers": [
+    "ALL CHECKS PASSED (23)",
+    "VERIFICATION COMPLETE: native union, HTTP JSON, and generated OpenAPI checked."
+  ],
+  "observedBrowserCases": [
+    {
+      "case": "Dog",
+      "httpStatus": 200,
+      "selectedHeader": "Dog",
+      "json": {
+        "name": "Rex",
+        "breed": "Husky"
+      }
+    },
+    {
+      "case": "Cat",
+      "httpStatus": 200,
+      "selectedHeader": "Cat",
+      "json": {
+        "name": "Milo",
+        "lives": 9
+      }
+    },
+    {
+      "case": "ambiguous mixed object",
+      "httpStatus": 400,
+      "selectedHeader": null,
+      "request": {
+        "name": "Shared",
+        "breed": "Husky",
+        "lives": 9
+      }
+    }
+  ],
+  "openApiObservation": "The live browser shows one Pet schema with anyOf references to Dog and Cat for both request and HTTP 200 response. Terminal checks also verify required fields and lives integer-or-string schema.",
+  "limits": [
+    "Windows raw artifacts were not uploaded; confirmation is screenshot-based.",
+    "No generated client, performance, MVC, or SignalR proof.",
+    "anyOf describes alternatives; it does not guarantee unambiguous runtime classification."
+  ],
+  "articleSelection": [
+    "laptop-screenshots/03-verification-complete.png",
+    "laptop-screenshots/05-dog-http-200.png",
+    "laptop-screenshots/06-ambiguous-http-400.png"
+  ],
+  "screenshots": [
+    {
+      "file": "laptop-screenshots/01-sdk-build.png",
+      "sourceName": "image(20260930-214630).png",
+      "sourceLibraryFileId": "libfile_550564eccd6c8191bb581791d080e5ba",
+      "sha256": "0e9023308668406bceced5887bd3326983e2bde4b6ac2c30afd7631e7dc35bfa",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/02-http-openapi-checks.png",
+      "sourceName": "image(20260930-214653).png",
+      "sourceLibraryFileId": "libfile_0bcc5117e1ac8191a8ed20b91358ba1d",
+      "sha256": "2d57bcf58581e6a958920bd9b84c96d7325e92f472ad248f933338a00ac90eaa",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/03-verification-complete.png",
+      "sourceName": "image(20260930-214713).png",
+      "sourceLibraryFileId": "libfile_6dd769874fe48191bc0b743ba185b1b8",
+      "sha256": "002d82063966d04f6c00776f38f6633aba034b709ee4c32abfc634431cd69d21",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/04-browser-ready.png",
+      "sourceName": "image(20260930-214736).png",
+      "sourceLibraryFileId": "libfile_5f223d0e4c3c8191a5d59399313c6f2b",
+      "sha256": "55f7dfdd209ab20d475ecfeebad21ff23a1be2aeff1299044c651a9e4472a466",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/05-dog-http-200.png",
+      "sourceName": "image(20260930-214800).png",
+      "sourceLibraryFileId": "libfile_5df191cd10ac8191a60acc53fe74d40a",
+      "sha256": "561a81e83eaed7c5b1d6bf8b570d675b0b3831cbdd3f32b6f1d570a66c1a8bf6",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/06-ambiguous-http-400.png",
+      "sourceName": "image(20260930-214824).png",
+      "sourceLibraryFileId": "libfile_6e3f3b68a1d48191ba0463ae179c332c",
+      "sha256": "fd936023f4e62bce1351d22d2e3b0ad8a9a2cc9c6b007552afb6bde3f478f779",
+      "modified": false
+    },
+    {
+      "file": "laptop-screenshots/07-cat-http-200.png",
+      "sourceName": "image(20260930-214846).png",
+      "sourceLibraryFileId": "libfile_97e452e502fc8191ac09f2e230fcf2b7",
+      "sha256": "453af0cdf7820eecb6af6a8d5dc495e600d8216f0728feed8d0ee315e6542654",
+      "modified": false
+    }
+  ]
+}

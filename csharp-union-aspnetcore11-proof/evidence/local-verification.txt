@@ -1,0 +1,41 @@
+=== DNC C# Union + ASP.NET Core 11 proof ===
+Runtime: .NET 11.0.0-rc.1.26425.128
+ASP.NET Core: 11.0.0.0
+OS: Ubuntu 24.04.3 LTS
+PASS: GET /pets/dog: HTTP 200, exact case JSON, no wrapper
+  {"name":"Rex","breed":"Husky"}
+PASS: GET /pets/cat: HTTP 200, exact case JSON, no wrapper
+  {"name":"Milo","lives":9}
+PASS: POST Dog: HTTP 200
+PASS: Dog: actual C# case selected, exact JSON round trip
+  Input: {"name":"Rex","breed":"Husky"}
+  X-Union-Case: Dog; response: {"name":"Rex","breed":"Husky"}
+PASS: POST Cat: HTTP 200
+PASS: Cat: actual C# case selected, exact JSON round trip
+  Input: {"name":"Milo","lives":9}
+  X-Union-Case: Cat; response: {"name":"Milo","lives":9}
+PASS: POST Cat: HTTP 200
+PASS: Cat: numeric string accepted, response normalized to number
+  Input: {"name":"Milo","lives":"9"}
+  X-Union-Case: Cat; response: {"name":"Milo","lives":9}
+PASS: POST missing case field: HTTP 400
+PASS: POST missing required name: HTTP 400
+PASS: POST ambiguous mixed object: HTTP 400
+PASS: POST wrong field type: HTTP 400
+PASS: POST unsupported boolean: HTTP 400
+PASS: POST null body: HTTP 400
+
+--- Generated OpenAPI ---
+PASS: GET Dog response: anyOf -> Cat, Dog standalone schemas
+PASS: GET Cat response: anyOf -> Cat, Dog standalone schemas
+PASS: POST request: anyOf -> Cat, Dog standalone schemas
+PASS: POST response: anyOf -> Cat, Dog standalone schemas
+PASS: Dog schema: name + breed (string)
+PASS: Dog schema: both fields required
+PASS: Cat schema: name + lives (integer or string)
+PASS: Cat schema: both fields required
+PASS: OpenAPI adds no discriminator or $type
+NOTE: anyOf is not the classifier. An object with both breed and lives matches both case shapes but is rejected at runtime as ambiguous.
+
+ALL CHECKS PASSED (23)
+Evidence: artifacts/openapi.json, artifacts/result.json, artifacts/http-cases.txt

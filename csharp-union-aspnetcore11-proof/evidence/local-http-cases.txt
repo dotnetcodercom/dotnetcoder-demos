@@ -1,0 +1,53 @@
+GET /pets/dog
+HTTP 200
+{"name":"Rex","breed":"Husky"}
+
+GET /pets/cat
+HTTP 200
+{"name":"Milo","lives":9}
+
+POST Dog
+{"name":"Rex","breed":"Husky"}
+HTTP 200
+{"name":"Rex","breed":"Husky"}
+
+POST Cat
+{"name":"Milo","lives":9}
+HTTP 200
+{"name":"Milo","lives":9}
+
+POST Cat
+{"name":"Milo","lives":"9"}
+HTTP 200
+{"name":"Milo","lives":9}
+
+POST missing case field
+{"name":"Shared"}
+HTTP 400
+
+
+POST missing required name
+{"breed":"Husky"}
+HTTP 400
+
+
+POST ambiguous mixed object
+{"name":"Shared","breed":"Husky","lives":9}
+HTTP 400
+
+
+POST wrong field type
+{"name":"Rex","breed":123}
+HTTP 400
+
+
+POST unsupported boolean
+true
+HTTP 400
+
+
+POST null body
+null
+HTTP 400
+
+

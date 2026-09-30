@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": 23,
+  "runtime": ".NET 11.0.0-rc.1.26425.128",
+  "operatingSystem": "Ubuntu 24.04.3 LTS",
+  "verifiedAtUtc": "2026-09-30T21:38:12.0578522+00:00",
+  "scope": "Native C# union; real HTTP JSON; generated OpenAPI anyOf. No generated client or performance test."
+}
