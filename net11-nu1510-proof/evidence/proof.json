@@ -1,0 +1,34 @@
+{
+  "provenance": "User-supplied Windows command output in this conversation; selected excerpts only",
+  "tested_on": "2026-09-30",
+  "sdk": "11.0.100-rc.1.26425.128",
+  "package_versions": {
+    "Before": "11.0.0-rc.1.26425.128",
+    "MultiTargetSafe-net10.0": "10.0.0"
+  },
+  "results": {
+    "before_warning": "PASS",
+    "after_restore": "PASS",
+    "after_build": "PASS",
+    "after_run": "PASS",
+    "multitarget_restore": "PASS",
+    "multitarget_build_net10.0": "PASS",
+    "multitarget_build_net11.0": "PASS"
+  },
+  "limits": [
+    "One package and ILogger/NullLogger APIs",
+    "No multi-target runtime execution",
+    "No old dependent-binary compatibility test",
+    "No deployment, AOT or performance test"
+  ],
+  "sha256": {
+    "Verify-NU1510.ps1": "d4e5cf9a46df5b003c2ca205a2a7df179d5c77081e7fe8a4d30bdcba3e6756bb",
+    "evidence/windows-proof-excerpts.txt": "bea568ff932b414913468597348cdce982c1837fa9942017fc3007f0a0c1607d",
+    "After/After.csproj": "eb3a79771434281f050710ab3c50605aa63328e7797dcd98171f913aab373e5f",
+    "After/Program.cs": "355f3e1e63ddc8d837c075fe249531c26cf37e6a2cb3d95b6c284f02a12291b2",
+    "Before/Program.cs": "9c77e0e4baf153d8603fe38a771088e57b030015679e35085007e349fbc33251",
+    "Before/Before.csproj": "4cb7d1b14545aa51372774c08bb2375209eb2ec51e507e4746a280a6b691680b",
+    "MultiTargetSafe/Program.cs": "895b7172015a44df2643f837753c8167f5c673a8d5dc199dd7280251d9e51320",
+    "MultiTargetSafe/MultiTargetSafe.csproj": "250670060b347b1dd3773f5117361acfaee208cb04ba7a1a9cc9d78d854ddb2e"
+  }
+}

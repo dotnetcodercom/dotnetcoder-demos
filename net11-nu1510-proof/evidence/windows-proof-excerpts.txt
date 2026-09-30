@@ -1,0 +1,14 @@
+Selected lines from the user-supplied Windows output, 2026-09-30.
+Paths omitted; this is not the original complete verification.txt transcript.
+
+Selected SDK: 11.0.100-rc.1.26425.128
+Before restore: warning NU1510: PackageReference Microsoft.Extensions.Logging.Abstractions will not be pruned. This package is automatically available and does not need to be referenced explicitly. Remove the PackageReference item.
+PASS: Before project emits NU1510
+After build: Build succeeded. 0 Warning(s). 0 Error(s).
+PASS: After project restores and builds without NU1510
+APP PASS: ILogger is available from the .NET 11 shared framework
+PASS: net11.0 app runs without the explicit package reference
+MultiTargetSafe build net10.0: Build succeeded. 0 Warning(s). 0 Error(s).
+MultiTargetSafe build net11.0: Build succeeded. 0 Warning(s). 0 Error(s).
+PASS: MultiTargetSafe builds net10.0 and net11.0 without NU1510
+PASS: NU1510 proof completed
