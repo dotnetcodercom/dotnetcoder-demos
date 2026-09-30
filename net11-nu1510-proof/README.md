@@ -26,3 +26,7 @@ evidence/windows-proof-excerpts.txt contains selected lines supplied by the deve
 `node Verify-Saved-Proof.mjs` checks the recorded proof and source binding only. It performs **no .NET restore, build, or execution** and does not establish fresh runtime behavior. This audit is useful for the repository handoff; run the PowerShell command for a fresh reproduction.
 
 The example exercises ILogger/NullLogger in a console app. It does not test all nine Microsoft.Extensions libraries, existing third-party binaries, self-contained deployment, Native AOT, or production workload behavior. Keep package dependencies needed by other target frameworks. Recompile and test actual dependent libraries before a production migration.
+
+## Screenshot evidence
+
+The three PNGs in `screenshots/` are contiguous crops of the developer-supplied Windows captures from the recorded run. They preserve the original result pixels; no output text was recreated. They show the SDK and Before warning, After runtime PASS, and the final multi-target completion markers. Crop boundaries omit unrelated surrounding output and are not full transcripts.

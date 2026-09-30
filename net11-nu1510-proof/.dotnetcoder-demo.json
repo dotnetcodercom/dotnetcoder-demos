@@ -2,7 +2,7 @@
   "version": 1,
   "candidate_id": "DNC-MANUAL-20260930-NU1510",
   "repository_path": "net11-nu1510-proof",
-  "source_sha256": "b5fd5107d81fe564e8afe6c29b3fa81adfe1e30b221f3ae34c0d0903b2619295",
+  "source_sha256": "447affcb6f90a510a7dcdb003cbb65be556d525185c0faf2edd38970523bbd9f",
   "article_url": "https://dotnetcoder.com/nu1510-in-dotnet-11-microsoft-extensions/",
   "files": [
     "After/After.csproj",
@@ -15,6 +15,9 @@
     "MultiTargetSafe/MultiTargetSafe.csproj",
     "MultiTargetSafe/Program.cs",
     "README.md",
+    "screenshots/after-build-and-run.png",
+    "screenshots/before-nu1510.png",
+    "screenshots/multitarget-proof-pass.png",
     "Verify-NU1510.ps1",
     "Verify-Saved-Proof.mjs"
   ]
