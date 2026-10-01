@@ -1,0 +1,5 @@
+artifacts/
+node_modules/
+**/bin/
+**/obj/
+*.zip

@@ -1,0 +1,36 @@
+{
+  "language": "en",
+  "imageTreatment": "ORIGINAL_BYTES_NO_CROP_NO_RESIZE",
+  "selected": [
+    {
+      "file": "screenshots/01-block-id-comparison.png",
+      "originalFilename": "image(20261001-154825).png",
+      "libraryFileId": "libfile_034eb4a99d788191b3f1b10c760842a6",
+      "width": 1914,
+      "height": 1002,
+      "sha256": "c220c4c14416df693e420123f33a829587a91644449c5463b0d8a72062347cfb",
+      "altText": "Two partitioned uploads reuse eight block IDs with Azure.Storage.Blobs 12.29.2 and share none with 12.30.0; downloaded bytes retain their SHA-256.",
+      "caption": "Two partitioned uploads reuse eight block IDs with Azure.Storage.Blobs 12.29.2 and share none with 12.30.0; downloaded bytes retain their SHA-256."
+    },
+    {
+      "file": "screenshots/02-resume-and-etag.png",
+      "originalFilename": "image(20261001-154645).png",
+      "libraryFileId": "libfile_3e66a28a9bc881918300d22405380a9b",
+      "width": 1918,
+      "height": 1003,
+      "sha256": "e855f1340f55e572b2fcf24d6ab1c456d47fbdb031913bf1df30db3c2b908104",
+      "altText": "Custom resume reuses two staged blocks, preserves manifest commit order and rejects changed source; a stale ETag commit is rejected with HTTP 412.",
+      "caption": "Custom resume reuses two staged blocks, preserves manifest commit order and rejects changed source; a stale ETag commit is rejected with HTTP 412."
+    },
+    {
+      "file": "screenshots/03-download-memory.png",
+      "originalFilename": "image(20261001-154729).png",
+      "libraryFileId": "libfile_0da143e0faac819197998e399bdda285",
+      "width": 1918,
+      "height": 1006,
+      "sha256": "5cbce4042bd3b3bd782fb54c6c32a77959cf3797f34373240c74d8353efccdcd",
+      "altText": "Six fresh-process downloads of a 64 MiB blob show local memory observations for three transfer profiles across SDK 12.29.2 and 12.30.0.",
+      "caption": "Six fresh-process downloads of a 64 MiB blob show local memory observations for three transfer profiles across SDK 12.29.2 and 12.30.0."
+    }
+  ]
+}

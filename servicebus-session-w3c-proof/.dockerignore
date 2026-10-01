@@ -1,0 +1,5 @@
+artifacts
+evidence
+**/bin
+**/obj
+**/node_modules

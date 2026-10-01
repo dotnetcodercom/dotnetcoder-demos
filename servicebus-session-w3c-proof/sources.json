@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "variant": "before",
+      "tag": "v4.1054.200",
+      "commit": "85a260d24bbf53ad3899d2218e8422757513cda2",
+      "archive": "vendor/functions-host-before.tar.gz",
+      "archiveSha256": "e79c2124183357b099db6666308e24a6e7591229b449ce535d08b615dc821617",
+      "url": "https://github.com/Azure/azure-functions-host/tree/85a260d24bbf53ad3899d2218e8422757513cda2"
+    },
+    {
+      "variant": "after",
+      "tag": "v4.1055.100",
+      "commit": "0a6bdc2f9c179c8b42984cc1e8a7e2c01a150451",
+      "archive": "vendor/functions-host-after.tar.gz",
+      "archiveSha256": "e24262d37aad716d5990ff0e7d0de6786434303dcff4bc6bf49d766127610fb1",
+      "url": "https://github.com/Azure/azure-functions-host/tree/0a6bdc2f9c179c8b42984cc1e8a7e2c01a150451"
+    }
+  ],
+  "fix": "https://github.com/Azure/azure-functions-host/pull/11946",
+  "fixCommit": "c02bfa6a97c0e0b7081c6b31cc2ea6956861ce65",
+  "containerPins": {
+    "emulator": {
+      "image": "mcr.microsoft.com/azure-messaging/servicebus-emulator:2.0.1",
+      "digest": "sha256:5a96d893b245031740f7d46e0fe5ff282d24b78c4b7d761dd57590f3f010a9b3"
+    },
+    "azurite": {
+      "image": "mcr.microsoft.com/azure-storage/azurite:3.35.0",
+      "digest": "sha256:647c63a91102a9d8e8000aab803436e1fc85fbb285e7ce830a82ee5d6661cf37"
+    },
+    "sql": {
+      "image": "mcr.microsoft.com/mssql/server:2022-latest",
+      "digest": "sha256:4402d880dd4c34bfa7d8705e56a86cd6c88da80a1f6bbbe741f999e76264a090"
+    },
+    "sdk": {
+      "image": "mcr.microsoft.com/dotnet/sdk:10.0.401",
+      "digest": "sha256:35d40304542c8689331f8cab17c65926cdf48fe711e289321d71924b230a7d29"
+    },
+    "aspnet": {
+      "image": "mcr.microsoft.com/dotnet/aspnet:10.0.12",
+      "digest": "sha256:2d584d8147faddb0d678c5748d47953e5b8e18621ed4fb7049a91381d9d7746f"
+    },
+    "runtime": {
+      "image": "mcr.microsoft.com/dotnet/runtime:10.0.12",
+      "digest": "sha256:ff17a18b639a0327e52c7c296fa2e1abe6e03eb61d8121a8ef67cc6aa430a27e"
+    }
+  }
+}

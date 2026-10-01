@@ -1,0 +1,31 @@
+{
+  "sdkVersion": "12.30.0\u002Bee03a772f5ed0c3561ce7e66cbf9855a8ffbd98a",
+  "expectedSdkVersion": "12.30.0",
+  "runId": "0d7c82d0032cc1076442028fc7846b6d",
+  "runtime": ".NET 10.0.12",
+  "os": "Microsoft Windows 10.0.26200",
+  "architecture": "X64",
+  "mode": "seed",
+  "label": "after",
+  "localEndpoint": "http://127.0.0.1:10080/dncproof",
+  "serviceVersion": "2023-11-03",
+  "container": "dnc-proof-0d7c82d0032cc1076442028fc7846b6d-after",
+  "fixtureSha256": "2F9955EDDCCDA0F3694A49638568CC494B68A79E49FAB84B1248EC9BC63B1BE7",
+  "fixtureBytes": 67108864,
+  "status": "PASS",
+  "utc": "2026-10-01T15:30:41.3545521+00:00",
+  "checks": [
+    {
+      "name": "Exact requested SDK loaded",
+      "pass": true
+    },
+    {
+      "name": "Download fixture is 64 MiB",
+      "pass": true
+    },
+    {
+      "name": "Seeded blob length matches fixture",
+      "pass": true
+    }
+  ]
+}

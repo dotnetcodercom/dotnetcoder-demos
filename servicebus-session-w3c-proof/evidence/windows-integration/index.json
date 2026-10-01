@@ -1,0 +1,17 @@
+{
+  "runId": "1790873249782-6bd9aa63",
+  "runDirectory": "C:\\Users\\Coder\\Downloads\\DNC-ServiceBus-W3C-Proof-English\\DNC-ServiceBus-W3C-Proof\\artifacts\\1790873249782-6bd9aa63",
+  "files": [
+    "docker-info.txt",
+    "receipts-before.jsonl",
+    "receipts-after.jsonl",
+    "traces.jsonl",
+    "manifest.json",
+    "integration.json",
+    "images.json",
+    "docker.log",
+    "result.json",
+    "report.html",
+    "console.log"
+  ]
+}

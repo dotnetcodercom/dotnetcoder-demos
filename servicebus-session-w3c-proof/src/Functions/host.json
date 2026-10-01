@@ -1,0 +1,1 @@
+{"version":"2.0","telemetryMode":"OpenTelemetry","extensions":{"serviceBus":{"maxConcurrentCalls":1,"maxConcurrentSessions":1,"prefetchCount":0,"sessionIdleTimeout":"00:00:05"}}}

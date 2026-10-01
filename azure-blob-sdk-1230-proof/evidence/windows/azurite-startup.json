@@ -1,0 +1,30 @@
+{
+  "runnerVersion": "1.0.1",
+  "node": "v22.22.3",
+  "platform": "win32",
+  "arch": "x64",
+  "host": "127.0.0.1",
+  "port": 10080,
+  "timeoutMs": 120000,
+  "status": "READY",
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "C:\\Users\\Coder\\Downloads\\DNC-Azure-Blob-1230-Proof\\DNC-Azure-Blob-1230-Proof\\node_modules\\azurite\\dist\\src\\blob\\main.js",
+    "--blobHost",
+    "127.0.0.1",
+    "--blobPort",
+    "10080",
+    "--location",
+    "C:\\Users\\Coder\\Downloads\\DNC-Azure-Blob-1230-Proof\\DNC-Azure-Blob-1230-Proof\\artifacts\\2026-10-01T15-28-27-892Z-0d7c82d0\\azurite",
+    "--silent",
+    "--disableTelemetry",
+    "--debug",
+    "C:\\Users\\Coder\\Downloads\\DNC-Azure-Blob-1230-Proof\\DNC-Azure-Blob-1230-Proof\\artifacts\\2026-10-01T15-28-27-892Z-0d7c82d0\\azurite-debug.log"
+  ],
+  "startedUtc": "2026-10-01T15:29:13.600Z",
+  "pid": 33904,
+  "elapsedMs": 69060,
+  "exitCode": null,
+  "signal": "SIGTERM",
+  "spawnError": null
+}

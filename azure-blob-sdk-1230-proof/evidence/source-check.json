@@ -1,0 +1,27 @@
+{
+  "sourceTag": "Azure.Storage.Blobs_12.30.0",
+  "changelogSha": "8510285029e39e7a4db422af79da0c9196e14ed9",
+  "downloaderSha": "e8712dee4ba6afc517d46a51ad4e79ea39f23c8a",
+  "transferOptionsSha": "f7e526ea5f2ffe6c3d741bdb4220a1c80084d538",
+  "checkedAt": "2026-10-01",
+  "baseline": "12.29.2",
+  "target": "12.30.0",
+  "sourceUrls": [
+    "https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Blobs_12.30.0/sdk/storage/Azure.Storage.Blobs/CHANGELOG.md",
+    "https://github.com/Azure/azure-sdk-for-net/blob/Azure.Storage.Blobs_12.30.0/sdk/storage/Azure.Storage.Blobs/src/PartitionedDownloader.cs",
+    "https://www.nuget.org/packages/Azure.Storage.Blobs/12.30.0",
+    "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-tune-upload-download",
+    "https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite"
+  ],
+  "claims": [
+    "New SDK partitioned upload block IDs are randomly generated; tested across two uploads, not statistical randomness.",
+    "Parallel DownloadToAsync buffers ranges; memory observations are local and do not establish a process memory cap.",
+    "The canonical transfer property used in this demo is MaximumTransferSize; MaximumTransferLength is a compatibility facade."
+  ],
+  "telemetryMitigation": {
+    "incident": "Initial local run was stopped by automatic approval review after an unnecessary metadata probe.",
+    "verifiedOfficialFlag": "--disableTelemetry",
+    "verifiedSource": "Azurite 3.37.0 blob/main.js passes !env.disableTelemetry() into AzuriteTelemetryClient.init; false prevents Application Insights initialization.",
+    "finalRun": "PASS_WITH_TELEMETRY_DISABLED"
+  }
+}

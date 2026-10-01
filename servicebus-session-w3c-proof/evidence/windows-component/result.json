@@ -1,0 +1,562 @@
+{
+  "schemaVersion": 1,
+  "runId": "1790871418181-a28ddcd2",
+  "mode": "component",
+  "timestampUtc": "2026-10-01T16:16:58.182Z",
+  "status": "COMPONENT_PASS_INTEGRATION_PENDING",
+  "component": [
+    {
+      "schemaVersion": 1,
+      "variant": "before",
+      "scope": "ACTUAL_HOST_CONFIGURATION_COMPONENT_ONLY",
+      "messageTransport": "NOT_RUN_NO_BROKER",
+      "hostMode": "Placeholder (no external exporters)",
+      "hostAssemblyVersion": "4.1054.0.0",
+      "timestampUtc": "2026-10-01T16:17:39.4336575+00:00",
+      "pass": true,
+      "checks": [
+        {
+          "name": "Actual Microsoft.Azure.WebJobs.Script assembly loaded",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[2] actual OTel export count",
+          "pass": true
+        }
+      ],
+      "cases": [
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 0,
+          "expectedListener": true,
+          "expectedTraceId": "20dfc69ee685a481f2f3f22030a99ba6",
+          "expectedParentSpanId": "a52d6e08a17975de",
+          "traceId": "20dfc69ee685a481f2f3f22030a99ba6",
+          "parentSpanId": "a52d6e08a17975de"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 1,
+          "expectedListener": true,
+          "expectedTraceId": "88ca9ee05f6eda5b47e288d66bbd04a3",
+          "expectedParentSpanId": "aafd270ba7220f07",
+          "traceId": "88ca9ee05f6eda5b47e288d66bbd04a3",
+          "parentSpanId": "aafd270ba7220f07"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 2,
+          "expectedListener": true,
+          "expectedTraceId": "deca23a2d5921679b6543a0f65a51c90",
+          "expectedParentSpanId": "531538ba45be3511",
+          "traceId": "deca23a2d5921679b6543a0f65a51c90",
+          "parentSpanId": "531538ba45be3511"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 0,
+          "expectedListener": false,
+          "expectedTraceId": "493431ac1461645e14233d84ba885694",
+          "expectedParentSpanId": "af4a62ee9d7ec855",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 1,
+          "expectedListener": false,
+          "expectedTraceId": "ad9d44ff943cd1e5b6d4aa4e567b967c",
+          "expectedParentSpanId": "6c9f3e7bedb1b4cb",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 2,
+          "expectedListener": false,
+          "expectedTraceId": "b49d273e46884ff5a484dfcf4412fc5c",
+          "expectedParentSpanId": "a6ff4bf8e9f67746",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 0,
+          "expectedListener": false,
+          "expectedTraceId": "806388c681e70480b36ffdbf5216acd7",
+          "expectedParentSpanId": "5b81d7ba5138c92e",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 1,
+          "expectedListener": false,
+          "expectedTraceId": "a7ebb10577cbffb6dc6fd91fe4735c16",
+          "expectedParentSpanId": "42b4be91f0b707f1",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 2,
+          "expectedListener": false,
+          "expectedTraceId": "b931954d9b4ee2c72bc78f63d5b28fac",
+          "expectedParentSpanId": "ea1c574ffd822194",
+          "traceId": null,
+          "parentSpanId": null
+        }
+      ],
+      "spans": [
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "20dfc69ee685a481f2f3f22030a99ba6",
+          "spanId": "5050c95cb97293ea",
+          "parentSpanId": "a52d6e08a17975de",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "88ca9ee05f6eda5b47e288d66bbd04a3",
+          "spanId": "83dfa3e92948e050",
+          "parentSpanId": "aafd270ba7220f07",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "deca23a2d5921679b6543a0f65a51c90",
+          "spanId": "bf342b62225ea601",
+          "parentSpanId": "531538ba45be3511",
+          "kind": "Consumer"
+        }
+      ],
+      "sourceTag": "v4.1054.200",
+      "sourceCommit": "85a260d24bbf53ad3899d2218e8422757513cda2",
+      "archiveSha256": "e79c2124183357b099db6666308e24a6e7591229b449ce535d08b615dc821617"
+    },
+    {
+      "schemaVersion": 1,
+      "variant": "after",
+      "scope": "ACTUAL_HOST_CONFIGURATION_COMPONENT_ONLY",
+      "messageTransport": "NOT_RUN_NO_BROKER",
+      "hostMode": "Placeholder (no external exporters)",
+      "hostAssemblyVersion": "4.1055.0.0",
+      "timestampUtc": "2026-10-01T16:17:47.7172324+00:00",
+      "pass": true,
+      "checks": [
+        {
+          "name": "Actual Microsoft.Azure.WebJobs.Script assembly loaded",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusProcessor[2] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] W3C trace ID preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] remote parent span preserved",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] consumer span sampled",
+          "pass": true
+        },
+        {
+          "name": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor[2] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[0] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[0] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[1] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[1] actual OTel export count",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[2] listener matches release",
+          "pass": true
+        },
+        {
+          "name": "DNC.UnknownSource[2] actual OTel export count",
+          "pass": true
+        }
+      ],
+      "cases": [
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 0,
+          "expectedListener": true,
+          "expectedTraceId": "e7d7b29dfe763355ca31e51e594c27a0",
+          "expectedParentSpanId": "771c8a9584030888",
+          "traceId": "e7d7b29dfe763355ca31e51e594c27a0",
+          "parentSpanId": "771c8a9584030888"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 1,
+          "expectedListener": true,
+          "expectedTraceId": "ecf1c3a61bbc6fad55c0bb27d8a9fc1b",
+          "expectedParentSpanId": "f094a09527057e71",
+          "traceId": "ecf1c3a61bbc6fad55c0bb27d8a9fc1b",
+          "parentSpanId": "f094a09527057e71"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "index": 2,
+          "expectedListener": true,
+          "expectedTraceId": "5213223cb5ca8feacb7dabdc0318456e",
+          "expectedParentSpanId": "6104afad4e3d8e5e",
+          "traceId": "5213223cb5ca8feacb7dabdc0318456e",
+          "parentSpanId": "6104afad4e3d8e5e"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 0,
+          "expectedListener": true,
+          "expectedTraceId": "bbacba21ccae36c70d4ab009680bb135",
+          "expectedParentSpanId": "c9f6e159b05f79ea",
+          "traceId": "bbacba21ccae36c70d4ab009680bb135",
+          "parentSpanId": "c9f6e159b05f79ea"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 1,
+          "expectedListener": true,
+          "expectedTraceId": "60736436e31382effb5b11d818111a4f",
+          "expectedParentSpanId": "e58d003102138cd4",
+          "traceId": "60736436e31382effb5b11d818111a4f",
+          "parentSpanId": "e58d003102138cd4"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "index": 2,
+          "expectedListener": true,
+          "expectedTraceId": "a9d24ea77cc2dcf964d04c5bc83b0c17",
+          "expectedParentSpanId": "6257e25aa806872a",
+          "traceId": "a9d24ea77cc2dcf964d04c5bc83b0c17",
+          "parentSpanId": "6257e25aa806872a"
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 0,
+          "expectedListener": false,
+          "expectedTraceId": "5c005ef3d424d3105aa66de56f5f7f74",
+          "expectedParentSpanId": "1c29fb22a9cb6eae",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 1,
+          "expectedListener": false,
+          "expectedTraceId": "7715113fec5b2f424b4be2a956b76d52",
+          "expectedParentSpanId": "3730611db4a3b27f",
+          "traceId": null,
+          "parentSpanId": null
+        },
+        {
+          "source": "DNC.UnknownSource",
+          "index": 2,
+          "expectedListener": false,
+          "expectedTraceId": "1d263502b9175f9d14cf39a1fcc9042a",
+          "expectedParentSpanId": "bd080d9d53f0c070",
+          "traceId": null,
+          "parentSpanId": null
+        }
+      ],
+      "spans": [
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "e7d7b29dfe763355ca31e51e594c27a0",
+          "spanId": "ab20ff0292e20a02",
+          "parentSpanId": "771c8a9584030888",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "ecf1c3a61bbc6fad55c0bb27d8a9fc1b",
+          "spanId": "d173f3b17ee92516",
+          "parentSpanId": "f094a09527057e71",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusProcessor",
+          "name": "Control.ProcessMessage",
+          "traceId": "5213223cb5ca8feacb7dabdc0318456e",
+          "spanId": "df742b068bfb22bf",
+          "parentSpanId": "6104afad4e3d8e5e",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "name": "ServiceBusSessionProcessor.ProcessSessionMessage",
+          "traceId": "bbacba21ccae36c70d4ab009680bb135",
+          "spanId": "80c23b2f70ffb32d",
+          "parentSpanId": "c9f6e159b05f79ea",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "name": "ServiceBusSessionProcessor.ProcessSessionMessage",
+          "traceId": "60736436e31382effb5b11d818111a4f",
+          "spanId": "aa53bdf570bd0e50",
+          "parentSpanId": "e58d003102138cd4",
+          "kind": "Consumer"
+        },
+        {
+          "source": "Azure.Messaging.ServiceBus.ServiceBusSessionProcessor",
+          "name": "ServiceBusSessionProcessor.ProcessSessionMessage",
+          "traceId": "a9d24ea77cc2dcf964d04c5bc83b0c17",
+          "spanId": "3db60f9eac34a3c8",
+          "parentSpanId": "6257e25aa806872a",
+          "kind": "Consumer"
+        }
+      ],
+      "sourceTag": "v4.1055.100",
+      "sourceCommit": "0a6bdc2f9c179c8b42984cc1e8a7e2c01a150451",
+      "archiveSha256": "e24262d37aad716d5990ff0e7d0de6786434303dcff4bc6bf49d766127610fb1"
+    }
+  ],
+  "gates": [
+    {
+      "name": "Old Host excludes all three session spans",
+      "pass": true
+    },
+    {
+      "name": "Fixed Host preserves all three session trace IDs and parents",
+      "pass": true
+    },
+    {
+      "name": "Ordinary processor works in both Hosts",
+      "pass": true
+    },
+    {
+      "name": "No unknown source accidentally enabled",
+      "pass": true
+    }
+  ],
+  "integration": {
+    "status": "PENDING_DOCKER_RUN"
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "runId": "1790873249782-6bd9aa63",
+  "mode": "integration",
+  "timestampUtc": "2026-10-01T16:47:29.783Z",
+  "status": "PASS",
+  "component": [],
+  "gates": [],
+  "integration": {
+    "status": "PASS",
+    "detail": "Actual AMQP messages, source-built Host pair, isolated Functions worker, local emulator and OTLP collector.",
+    "checks": [
+      {
+        "name": "12 messages were sent",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-0: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-0: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-0: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-0: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-0: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-1: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-1: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-1: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-1: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-1: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-2: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-2: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-2: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-2: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-regular-2: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-0: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-0: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-0: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-0: old Host has no session processor span",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-1: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-1: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-1: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-1: old Host has no session processor span",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-2: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-2: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-2: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-before-session-2: old Host has no session processor span",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-0: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-0: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-0: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-0: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-0: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-1: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-1: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-1: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-1: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-1: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-2: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-2: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-2: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-2: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-regular-2: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-0: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-0: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-0: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-0: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-0: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-1: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-1: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-1: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-1: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-1: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-2: message consumed",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-2: received Diagnostic-Id unchanged",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-2: session identifier preserved",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-2: expected processor span exported",
+        "pass": true
+      },
+      {
+        "name": "1790873249782-6bd9aa63-after-session-2: exact producer parent or link preserved",
+        "pass": true
+      },
+      {
+        "name": "before: regular control exported",
+        "pass": true
+      },
+      {
+        "name": "after: regular control exported",
+        "pass": true
+      },
+      {
+        "name": "Old Host exports no session processor source at all",
+        "pass": true
+      }
+    ]
+  }
+}

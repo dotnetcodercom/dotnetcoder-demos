@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "reviewedUtc": "2026-10-01T17:44:28.352400+00:00",
+  "language": "en",
+  "imageTreatment": "ORIGINAL_BYTES_NO_CROP_NO_RESIZE",
+  "selected": [
+    {
+      "file": "screenshots/01-local-verification-summary.png",
+      "originalFilename": "image(20261001-174140).png",
+      "libraryFileId": "libfile_16f5a82e53748191a37f3cc7868b3cd4",
+      "width": 1914,
+      "height": 991,
+      "sha256": "ada18bde717c01a823e3d41c0b25312610b2d604744213d625db61a3bd19c771",
+      "altText": "Local verification summary: 65 component checks, four comparison gates and 61 AMQP integration checks passed; 12 messages sent and received.",
+      "caption": "Local verification summary: 65 component checks, four comparison gates and 61 AMQP integration checks passed; 12 messages sent and received.",
+      "selectionReason": "The complete summary includes the test scope, both run IDs and UTC timestamps."
+    },
+    {
+      "file": "screenshots/02-session-processor-before-after.png",
+      "originalFilename": "image(20261001-174155).png",
+      "libraryFileId": "libfile_f3985c3f4ebc8191a787c8097a2a8364",
+      "width": 1917,
+      "height": 1003,
+      "sha256": "2acdb152b69ac934370c5f4192250acb1d44bcf6574ef9e01c782b1fb5717985",
+      "altText": "Host v4.1054.200 exports no session processor spans; v4.1055.100 exports all three with exact trace and parent context. Ordinary and unknown-source controls pass.",
+      "caption": "Host v4.1054.200 exports no session processor spans; v4.1055.100 exports all three with exact trace and parent context. Ordinary and unknown-source controls pass.",
+      "selectionReason": "The complete component comparison includes source names and scope notes."
+    },
+    {
+      "file": "screenshots/03-actual-message-integration.png",
+      "originalFilename": "image(20261001-174226).png",
+      "libraryFileId": "libfile_5ecc8ae192148191a7bfc7da3fbb12c8",
+      "width": 1918,
+      "height": 1003,
+      "sha256": "584f95540aa5d74d7148065a246ad000bdfa164069ca89fdafa96768518292df",
+      "altText": "Actual local AMQP integration: 12 messages received and all 61 checks passed. The fixed Host session spans match the producer Trace IDs and parent Span IDs.",
+      "caption": "Actual local AMQP integration: 12 messages received and all 61 checks passed. The fixed Host session spans match the producer Trace IDs and parent Span IDs.",
+      "selectionReason": "Both integration tables, all three full Trace IDs, matching parents and local emulator scope are visible."
+    }
+  ],
+  "reserves": [
+    {
+      "originalFilename": "image(20261001-174023).png",
+      "libraryFileId": "libfile_8ee74cf52bec8191a246ee2d76a121fc",
+      "reason": "Title and summary visible, but run table is cut off."
+    },
+    {
+      "originalFilename": "image(20261001-174244).png",
+      "libraryFileId": "libfile_d74e709bafd481919702afcbbb63708b",
+      "reason": "Shows context matches but omits the integration summary and before/after table."
+    }
+  ]
+}

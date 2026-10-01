@@ -1,0 +1,81 @@
+name: dnc-servicebus-w3c-proof
+x-function-env: &function-env
+  languageWorkers__dotnet-isolated__workerDirectory: /home/site/wwwroot
+  AzureWebJobsFeatureFlags: EnableWorkerIndexing
+  AzureWebJobsStorage: "DefaultEndpointsProtocol=http;AccountName=dncproof;AccountKey=MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY=;BlobEndpoint=http://azurite:10000/dncproof;QueueEndpoint=http://azurite:10001/dncproof;TableEndpoint=http://azurite:10002/dncproof;"
+  ServiceBusConnection: "Endpoint=sb://emulator;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
+  OTEL_EXPORTER_OTLP_ENDPOINT: http://collector:4318
+  OTEL_EXPORTER_OTLP_PROTOCOL: http/protobuf
+  OTEL_TRACES_SAMPLER: always_on
+  OTEL_METRICS_EXPORTER: none
+  OTEL_LOGS_EXPORTER: none
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server@sha256:4402d880dd4c34bfa7d8705e56a86cd6c88da80a1f6bbbe741f999e76264a090
+    platform: linux/amd64
+    environment:
+      ACCEPT_EULA: ${ACCEPT_EULA:-N}
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:?Runner supplies an ephemeral local password}
+  emulator:
+    image: mcr.microsoft.com/azure-messaging/servicebus-emulator:2.0.1@sha256:5a96d893b245031740f7d46e0fe5ff282d24b78c4b7d761dd57590f3f010a9b3
+    platform: linux/amd64
+    environment:
+      ACCEPT_EULA: ${ACCEPT_EULA:-N}
+      SQL_SERVER: sql
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD}
+      SQL_WAIT_INTERVAL: "30"
+      EMULATOR_HTTP_PORT: "5300"
+    volumes:
+      - ./Config.json:/ServiceBus_Emulator/ConfigFiles/Config.json:ro
+    ports: ["127.0.0.1:5301:5300"]
+    depends_on: [sql]
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite:3.35.0@sha256:647c63a91102a9d8e8000aab803436e1fc85fbb285e7ce830a82ee5d6661cf37
+    environment:
+      AZURITE_ACCOUNTS: "dncproof:MDEyMzQ1Njc4OWFiY2RlZjAxMjM0NTY3ODlhYmNkZWY="
+    command: azurite --disableTelemetry --blobHost 0.0.0.0 --queueHost 0.0.0.0 --tableHost 0.0.0.0 --skipApiVersionCheck
+  collector:
+    image: otel/opentelemetry-collector-contrib:0.139.0
+    user: "0:0"
+    command: ["--config=/etc/otel/collector.yaml"]
+    volumes:
+      - ./collector.yaml:/etc/otel/collector.yaml:ro
+      - ${DNC_OUTPUT_DIR}:/proof
+  before:
+    build:
+      context: ..
+      dockerfile: docker/Functions.Dockerfile
+      args: {VARIANT: before}
+    platform: linux/amd64
+    environment:
+      <<: *function-env
+      DNC_VARIANT: before
+      SessionQueue: before-session
+      RegularQueue: before-regular
+      OTEL_SERVICE_NAME: dnc-host-before
+      DNC_RECEIPTS: /proof/receipts-before.jsonl
+    volumes: ["${DNC_OUTPUT_DIR}:/proof"]
+    depends_on: [emulator, azurite, collector]
+  after:
+    build:
+      context: ..
+      dockerfile: docker/Functions.Dockerfile
+      args: {VARIANT: after}
+    platform: linux/amd64
+    environment:
+      <<: *function-env
+      DNC_VARIANT: after
+      SessionQueue: after-session
+      RegularQueue: after-regular
+      OTEL_SERVICE_NAME: dnc-host-after
+      DNC_RECEIPTS: /proof/receipts-after.jsonl
+    volumes: ["${DNC_OUTPUT_DIR}:/proof"]
+    depends_on: [emulator, azurite, collector]
+  sender:
+    profiles: [send]
+    build:
+      context: ..
+      dockerfile: docker/Sender.Dockerfile
+    environment:
+      ServiceBusConnection: "Endpoint=sb://emulator;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;"
+    volumes: ["${DNC_OUTPUT_DIR}:/proof"]

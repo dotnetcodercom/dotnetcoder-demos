@@ -1,0 +1,147 @@
+{
+  "sdkVersion": "12.29.2\u002Babb7016df73cf11900c631c2d21a02c7a0301e23",
+  "expectedSdkVersion": "12.29.2",
+  "runId": "0d7c82d0032cc1076442028fc7846b6d",
+  "runtime": ".NET 10.0.12",
+  "os": "Microsoft Windows 10.0.26200",
+  "architecture": "X64",
+  "mode": "blocks",
+  "label": "before",
+  "localEndpoint": "http://127.0.0.1:10080/dncproof",
+  "serviceVersion": "2023-11-03",
+  "container": "dnc-proof-0d7c82d0032cc1076442028fc7846b6d-before",
+  "sdkBlockIds": {
+    "first": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "second": [
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "AABwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    ],
+    "overlap": 8,
+    "idsAreSortedInThisSample": true,
+    "firstDecodedHex": [
+      "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000030000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000040000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000050000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "000070000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    ]
+  },
+  "resume": {
+    "session": "60a8d8cec6524f8fa68148c3b3c2ba1b",
+    "reused": 2,
+    "blocks": 6,
+    "sha256": "B6E97DE459A415C24606C2A71BEE23C74EAA6ADD8CD5B3A1905B45214F472D24",
+    "manifestFile": "before-resume-manifest.json"
+  },
+  "etagGuard": {
+    "staleWriterHttpStatus": 412,
+    "winnerSha256": "1E992F8908F37A9D83F438B3062C7F9F88068A854D253B7918808BF6840A5D9C",
+    "scope": "two staged writers, serialized conditional commits; not a load test"
+  },
+  "status": "PASS",
+  "utc": "2026-10-01T15:30:34.4474452+00:00",
+  "checks": [
+    {
+      "name": "Exact requested SDK loaded",
+      "pass": true
+    },
+    {
+      "name": "Partitioned upload has eight committed blocks",
+      "pass": true
+    },
+    {
+      "name": "First upload SHA256 matches",
+      "pass": true
+    },
+    {
+      "name": "Second partitioned upload has eight committed blocks",
+      "pass": true
+    },
+    {
+      "name": "Second upload SHA256 matches",
+      "pass": true
+    },
+    {
+      "name": "Previous SDK reuses its sequential IDs",
+      "pass": true
+    },
+    {
+      "name": "Interrupted upload has two uncommitted blocks",
+      "pass": true
+    },
+    {
+      "name": "Persisted manifest reload preserves order",
+      "pass": true
+    },
+    {
+      "name": "Resume rejects changed source by SHA256",
+      "pass": true
+    },
+    {
+      "name": "Rejected resume leaves staged blocks unchanged",
+      "pass": true
+    },
+    {
+      "name": "Resume source SHA256 matches saved manifest",
+      "pass": true
+    },
+    {
+      "name": "Resume reuses the two staged blocks",
+      "pass": true
+    },
+    {
+      "name": "All six manifest blocks are staged",
+      "pass": true
+    },
+    {
+      "name": "Manifest-order commit restores complete file",
+      "pass": true
+    },
+    {
+      "name": "Wrong commit order changes file bytes",
+      "pass": true
+    },
+    {
+      "name": "Original manifest order restores SHA256",
+      "pass": true
+    },
+    {
+      "name": "Writer A commits with current ETag",
+      "pass": true
+    },
+    {
+      "name": "Writer B stale ETag rejected with HTTP 412",
+      "pass": true
+    },
+    {
+      "name": "Rejected writer leaves winner content intact",
+      "pass": true
+    },
+    {
+      "name": "Missing blob returns HTTP 404",
+      "pass": true
+    },
+    {
+      "name": "Pre-canceled download throws cancellation",
+      "pass": true
+    }
+  ]
+}

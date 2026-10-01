@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-01T15:30:44.374Z",
+  "candidateId": "DNC-CYCLE-20261001-C03",
+  "runId": "0d7c82d0032cc1076442028fc7846b6d",
+  "sdkVersions": [
+    "12.29.2",
+    "12.30.0"
+  ],
+  "azuriteVersion": "3.37.0",
+  "results": 10,
+  "passedChecks": 84,
+  "crossVersionChecks": [
+    "old IDs reused / new IDs disjoint",
+    "all six download SHA256 values equal"
+  ],
+  "evidenceScope": "LOCAL_AZURITE_ONLY",
+  "windowsVerification": "PASS",
+  "error": null,
+  "wordPressChanged": false,
+  "cloudResourcesCreated": false,
+  "azuriteTelemetry": "DISABLED_BY_OFFICIAL_CLI_FLAG",
+  "dotnetCliTelemetry": "DISABLED_FOR_BUILD"
+}

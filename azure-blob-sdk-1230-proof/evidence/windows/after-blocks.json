@@ -1,0 +1,147 @@
+{
+  "sdkVersion": "12.30.0\u002Bee03a772f5ed0c3561ce7e66cbf9855a8ffbd98a",
+  "expectedSdkVersion": "12.30.0",
+  "runId": "0d7c82d0032cc1076442028fc7846b6d",
+  "runtime": ".NET 10.0.12",
+  "os": "Microsoft Windows 10.0.26200",
+  "architecture": "X64",
+  "mode": "blocks",
+  "label": "after",
+  "localEndpoint": "http://127.0.0.1:10080/dncproof",
+  "serviceVersion": "2023-11-03",
+  "container": "dnc-proof-0d7c82d0032cc1076442028fc7846b6d-after",
+  "sdkBlockIds": {
+    "first": [
+      "zDnfbyN5SSHwwCBROL3ZdVL\u002B7zNYIZvBCtNl8kWpuaQfaHzHSi6QW0EkDtgEdYVL",
+      "vctRd\u002Bf\u002BTUGR5sxhKP3GtsQxPT/brvUSc9Ppj9Esx1Qm9CWAk5AfTDeHQYPJ4Hpy",
+      "NJsUpsIgdoCvt8Zi6TxgcM5euaMK4TPyygVH5x5n4DkW6GFp3Prt31UHStzcltBi",
+      "mKLnpMFZy0we7djwREUvKSnKttBVuxyKn3AhqbLVfvEgPC2TURYzlM6DEiEuinV9",
+      "ayu7zJ70CnetsUUm\u002BIvp0hmyofU4NVCG9ZEqGvcToWMwg2c4tIvq9sqcfbUyCDCn",
+      "hKPz\u002BoWDyhqdbxXCJjyPneTcqH6cgcAPU\u002BfhP9yfBtwECavb41o6lDshhe7J6gwE",
+      "Uupx1y0GATqBsOvBicLi70OQvRQ\u002B1I/ht7uV1RDqio8PK8f5Y/OnruI2GaDawIAz",
+      "Xkyz\u002B0gvnwhNxRnG6g20xtXd09XVdSed79z\u002B8zMuTplXSvz47UVM12tTQS20LShy"
+    ],
+    "second": [
+      "p\u002BSnPznK5/GYuQZeohx7GZp\u002BK1Q6J7MPZuawS\u002B/A24u8flQ\u002BC/apRitaU/Oz/JyN",
+      "bqw1XE2OI6DKvh/nvFuGMfhfCrzZ6hLpoTk/zBkCuX17alLOdi0eXdzKX\u002Bvvc7sk",
+      "amhYWJV7WY8UWOzRUalNU\u002BlReGNojo0f1a1SjvxM5V\u002BpHxTDkRteam8IyClnVk21",
+      "TWdm8b/vOwyvUQftW9rIjzqCjdJNF7bWfjvyzj\u002BE0qeySboOHMTsq\u002BLSILtq0Fu3",
+      "yt3i3UZhgk\u002ByUq7u5IuFISz5y6MYRdXBJLUXqVIafK9tIvbIMd65I8\u002B1WnHpljlb",
+      "/IglYd27NCt2RJGG1Gz5ePysnDb\u002Bux1Zniq\u002BQminiyZF3R8AGTQ0TuEMAx3WhBPc",
+      "FZlYDf3Pe8HxbkjWPSO\u002BpJPcVEGP9UlaEk6tAerdFvMoHUO58ND30ewq/qHVBwn4",
+      "p\u002Br2bzJ\u002Blqo8Fv/9H7vbk2jQmYydB/QHxAN2ksb6tBX0leksWGaWXBRt\u002BNP\u002Bpu7\u002B"
+    ],
+    "overlap": 0,
+    "idsAreSortedInThisSample": false,
+    "firstDecodedHex": [
+      "CC39DF6F23794921F0C0205138BDD97552FEEF3358219BC10AD365F245A9B9A41F687CC74A2E905B41240ED80475854B",
+      "BDCB5177E7FE4D4191E6CC6128FDC6B6C4313D3FDBAEF51273D3E98FD12CC75426F4258093901F4C37874183C9E07A72",
+      "349B14A6C2207680AFB7C662E93C6070CE5EB9A30AE133F2CA0547E71E67E03916E86169DCFAEDDF55074ADCDC96D062",
+      "98A2E7A4C159CB4C1EEDD8F044452F2929CAB6D055BB1C8A9F7021A9B2D57EF1203C2D9351163394CE8312212E8A757D",
+      "6B2BBBCC9EF40A77ADB14526F88BE9D219B2A1F538355086F5912A1AF713A16330836738B48BEAF6CA9C7DB5320830A7",
+      "84A3F3FA8583CA1A9D6F15C2263C8F9DE4DCA87E9C81C00F53E7E13FDC9F06DC0409ABDBE35A3A943B2185EEC9EA0C04",
+      "52EA71D72D06013A81B0EBC189C2E2EF4390BD143ED48FE1B7BB95D510EA8A8F0F2BC7F963F3A7AEE23619A0DAC08033",
+      "5E4CB3FB482F9F084DC519C6EA0DB4C6D5DDD3D5D575279DEFDCFEF3332E4E99574AFCF8ED454CD76B53412DB42D2872"
+    ]
+  },
+  "resume": {
+    "session": "892f263810c6425bb2613a1458d9c913",
+    "reused": 2,
+    "blocks": 6,
+    "sha256": "B6E97DE459A415C24606C2A71BEE23C74EAA6ADD8CD5B3A1905B45214F472D24",
+    "manifestFile": "after-resume-manifest.json"
+  },
+  "etagGuard": {
+    "staleWriterHttpStatus": 412,
+    "winnerSha256": "1E992F8908F37A9D83F438B3062C7F9F88068A854D253B7918808BF6840A5D9C",
+    "scope": "two staged writers, serialized conditional commits; not a load test"
+  },
+  "status": "PASS",
+  "utc": "2026-10-01T15:30:40.1181237+00:00",
+  "checks": [
+    {
+      "name": "Exact requested SDK loaded",
+      "pass": true
+    },
+    {
+      "name": "Partitioned upload has eight committed blocks",
+      "pass": true
+    },
+    {
+      "name": "First upload SHA256 matches",
+      "pass": true
+    },
+    {
+      "name": "Second partitioned upload has eight committed blocks",
+      "pass": true
+    },
+    {
+      "name": "Second upload SHA256 matches",
+      "pass": true
+    },
+    {
+      "name": "New SDK IDs differ across repeated uploads",
+      "pass": true
+    },
+    {
+      "name": "Interrupted upload has two uncommitted blocks",
+      "pass": true
+    },
+    {
+      "name": "Persisted manifest reload preserves order",
+      "pass": true
+    },
+    {
+      "name": "Resume rejects changed source by SHA256",
+      "pass": true
+    },
+    {
+      "name": "Rejected resume leaves staged blocks unchanged",
+      "pass": true
+    },
+    {
+      "name": "Resume source SHA256 matches saved manifest",
+      "pass": true
+    },
+    {
+      "name": "Resume reuses the two staged blocks",
+      "pass": true
+    },
+    {
+      "name": "All six manifest blocks are staged",
+      "pass": true
+    },
+    {
+      "name": "Manifest-order commit restores complete file",
+      "pass": true
+    },
+    {
+      "name": "Wrong commit order changes file bytes",
+      "pass": true
+    },
+    {
+      "name": "Original manifest order restores SHA256",
+      "pass": true
+    },
+    {
+      "name": "Writer A commits with current ETag",
+      "pass": true
+    },
+    {
+      "name": "Writer B stale ETag rejected with HTTP 412",
+      "pass": true
+    },
+    {
+      "name": "Rejected writer leaves winner content intact",
+      "pass": true
+    },
+    {
+      "name": "Missing blob returns HTTP 404",
+      "pass": true
+    },
+    {
+      "name": "Pre-canceled download throws cancellation",
+      "pass": true
+    }
+  ]
+}

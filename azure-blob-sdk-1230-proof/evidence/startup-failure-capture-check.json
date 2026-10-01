@@ -1,0 +1,10 @@
+{
+  "scope": "CONTROLLED_FAILURE_LOGGING_TEST_NOT_A_REAL_AZURITE_FAILURE",
+  "timestampUtc": "2026-10-01T15:00:35.460160+00:00",
+  "injectedExitCode": 37,
+  "savedChildStderr": true,
+  "savedExitCode": true,
+  "reportStayedFail": true,
+  "removedStaleSuccessReceipts": true,
+  "status": "PASS"
+}

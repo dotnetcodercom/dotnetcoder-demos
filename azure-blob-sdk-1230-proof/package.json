@@ -1,0 +1,8 @@
+{
+  "name": "dnc-azure-blob-1230-proof",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local evidence for Azure.Storage.Blobs 12.29.2 vs 12.30.0",
+  "engines": { "node": ">=22.0.0" },
+  "devDependencies": { "azurite": "3.37.0" }
+}
