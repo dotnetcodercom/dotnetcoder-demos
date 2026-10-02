@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "atUtc": "2026-10-02T17:30:01.335Z",
+  "browser": "141.0.7390.37",
+  "node": "v24.19.0",
+  "scope": "Initial bindings, local PNGs, Chromium DPR 1/2; no LCP, bandwidth, production CDN, dynamic binding or all-browser claims.",
+  "results": [
+    {
+      "version": "22.2.0",
+      "dpr": 1,
+      "rows": [
+        {
+          "id": "custom",
+          "srcset": null,
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/fallback.png",
+          "naturalWidth": 100
+        },
+        {
+          "id": "attribute",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/signed-a.png?token=one",
+          "naturalWidth": 100
+        },
+        {
+          "id": "generated",
+          "srcset": "images/generated-100.png 1x, images/generated-200.png 2x",
+          "src": "images/generated-100.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/generated-100.png",
+          "naturalWidth": 100
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:39121/22.2.0/dist/images/fallback.png",
+        "http://127.0.0.1:39121/22.2.0/dist/images/signed-a.png?token=one",
+        "http://127.0.0.1:39121/22.2.0/dist/images/generated-100.png"
+      ],
+      "consoleMessages": [
+        {
+          "type": "log",
+          "text": "Angular is running in development mode."
+        }
+      ],
+      "errors": [],
+      "checks": "PASS"
+    },
+    {
+      "version": "22.2.0",
+      "dpr": 2,
+      "rows": [
+        {
+          "id": "custom",
+          "srcset": null,
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/fallback.png",
+          "naturalWidth": 100
+        },
+        {
+          "id": "attribute",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/signed-b.png?token=two",
+          "naturalWidth": 100
+        },
+        {
+          "id": "generated",
+          "srcset": "images/generated-100.png 1x, images/generated-200.png 2x",
+          "src": "images/generated-100.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.0/dist/images/generated-200.png",
+          "naturalWidth": 100
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:39121/22.2.0/dist/images/fallback.png",
+        "http://127.0.0.1:39121/22.2.0/dist/images/signed-b.png?token=two",
+        "http://127.0.0.1:39121/22.2.0/dist/images/generated-200.png"
+      ],
+      "consoleMessages": [
+        {
+          "type": "log",
+          "text": "Angular is running in development mode."
+        }
+      ],
+      "errors": [],
+      "checks": "PASS"
+    },
+    {
+      "version": "22.2.1",
+      "dpr": 1,
+      "rows": [
+        {
+          "id": "custom",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/signed-a.png?token=one",
+          "naturalWidth": 100
+        },
+        {
+          "id": "attribute",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/signed-a.png?token=one",
+          "naturalWidth": 100
+        },
+        {
+          "id": "generated",
+          "srcset": "images/generated-100.png 1x, images/generated-200.png 2x",
+          "src": "images/generated-100.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/generated-100.png",
+          "naturalWidth": 100
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:39121/22.2.1/dist/images/signed-a.png?token=one",
+        "http://127.0.0.1:39121/22.2.1/dist/images/generated-100.png"
+      ],
+      "consoleMessages": [
+        {
+          "type": "log",
+          "text": "Angular is running in development mode."
+        }
+      ],
+      "errors": [],
+      "checks": "PASS"
+    },
+    {
+      "version": "22.2.1",
+      "dpr": 2,
+      "rows": [
+        {
+          "id": "custom",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/signed-b.png?token=two",
+          "naturalWidth": 100
+        },
+        {
+          "id": "attribute",
+          "srcset": "images/signed-a.png?token=one 1x, images/signed-b.png?token=two 2x",
+          "src": "images/fallback.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/signed-b.png?token=two",
+          "naturalWidth": 100
+        },
+        {
+          "id": "generated",
+          "srcset": "images/generated-100.png 1x, images/generated-200.png 2x",
+          "src": "images/generated-100.png",
+          "currentSrc": "http://127.0.0.1:39121/22.2.1/dist/images/generated-200.png",
+          "naturalWidth": 100
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:39121/22.2.1/dist/images/signed-b.png?token=two",
+        "http://127.0.0.1:39121/22.2.1/dist/images/generated-200.png"
+      ],
+      "consoleMessages": [
+        {
+          "type": "log",
+          "text": "Angular is running in development mode."
+        }
+      ],
+      "errors": [],
+      "checks": "PASS"
+    }
+  ]
+}

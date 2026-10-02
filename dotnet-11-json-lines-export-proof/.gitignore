@@ -1,0 +1,6 @@
+bin/
+obj/
+node_modules/
+versions/*/node_modules/
+versions/*/dist/
+versions/*/fixture.ts

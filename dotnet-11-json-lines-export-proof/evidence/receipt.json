@@ -1,0 +1,106 @@
+{
+  "Status": "PASS",
+  "AtUtc": "2026-10-02T17:29:30.2205011+00:00",
+  "Sdk": "11.0.100-rc.1.26425.128",
+  "Framework": ".NET 11.0.0-rc.1.26425.128",
+  "Assembly": "System.Text.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51",
+  "InformationalVersion": "11.0.0-rc.1.26425.128\u002B3551975be08744f0418857c5bed8ab1545c5dd47",
+  "FailedChecks": 0,
+  "CheckCount": 9,
+  "Results": [
+    {
+      "Name": "RC1 public API available",
+      "Status": "PASS",
+      "Evidence": [
+        "System.Threading.Tasks.Task SerializeAsyncEnumerable[TValue](System.IO.Stream, System.Collections.Generic.IAsyncEnumerable\u00601[TValue], Boolean, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)",
+        "System.Threading.Tasks.Task SerializeAsyncEnumerable[TValue](System.IO.Stream, System.Collections.Generic.IAsyncEnumerable\u00601[TValue], System.Text.Json.Serialization.Metadata.JsonTypeInfo\u00601[TValue], Boolean, System.Threading.CancellationToken)",
+        "System.Threading.Tasks.Task SerializeAsyncEnumerable[TValue](System.IO.Pipelines.PipeWriter, System.Collections.Generic.IAsyncEnumerable\u00601[TValue], Boolean, System.Text.Json.JsonSerializerOptions, System.Threading.CancellationToken)",
+        "System.Threading.Tasks.Task SerializeAsyncEnumerable[TValue](System.IO.Pipelines.PipeWriter, System.Collections.Generic.IAsyncEnumerable\u00601[TValue], System.Text.Json.Serialization.Metadata.JsonTypeInfo\u00601[TValue], Boolean, System.Threading.CancellationToken)"
+      ]
+    },
+    {
+      "Name": "Stream canonical JSONL framing",
+      "Status": "PASS",
+      "Evidence": {
+        "Utf8Bytes": 93,
+        "Lines": [
+          "{\u0022Id\u0022:1,\u0022Text\u0022:\u0022line one\\nline two\u0022}",
+          "{\u0022Id\u0022:2,\u0022Text\u0022:\u0022quote: \\u0022 and emoji: \\uD83E\\uDDEA\u0022}",
+          ""
+        ],
+        "WriteIndentedIgnored": true,
+        "ConfiguredCrLfIgnored": true
+      }
+    },
+    {
+      "Name": "PipeWriter canonical JSONL framing",
+      "Status": "PASS",
+      "Evidence": {
+        "Utf8Bytes": 93,
+        "Lines": [
+          "{\u0022Id\u0022:1,\u0022Text\u0022:\u0022line one\\nline two\u0022}",
+          "{\u0022Id\u0022:2,\u0022Text\u0022:\u0022quote: \\u0022 and emoji: \\uD83E\\uDDEA\u0022}",
+          ""
+        ],
+        "WriteIndentedIgnored": true,
+        "ConfiguredCrLfIgnored": true
+      }
+    },
+    {
+      "Name": "Default output remains a JSON array",
+      "Status": "PASS",
+      "Evidence": {
+        "Body": "[{\u0022Id\u0022:1,\u0022Text\u0022:\u0022line one\\nline two\u0022},{\u0022Id\u0022:2,\u0022Text\u0022:\u0022quote: \\u0022 and emoji: \\uD83E\\uDDEA\u0022}]"
+      }
+    },
+    {
+      "Name": "Empty sequence: zero JSONL bytes versus empty array",
+      "Status": "PASS",
+      "Evidence": {
+        "JsonlBytes": 0,
+        "Array": "[]"
+      }
+    },
+    {
+      "Name": "HTTP first JSONL record before producer completion (buffer 16384)",
+      "Status": "PASS",
+      "Evidence": {
+        "FirstRecordBeforeProducerRelease": true,
+        "BufferSize": 16384,
+        "PayloadCharacters": 200,
+        "FirstRecord": "{\u0022Id\u0022:1,\u0022Text\u0022:\u0022aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0022}",
+        "RemainingBody": "{\u0022Id\u0022:2,\u0022Text\u0022:\u0022last row\u0022}\n"
+      }
+    },
+    {
+      "Name": "HTTP first JSONL record before producer completion (buffer 128)",
+      "Status": "PASS",
+      "Evidence": {
+        "FirstRecordBeforeProducerRelease": true,
+        "BufferSize": 128,
+        "PayloadCharacters": 200,
+        "FirstRecord": "{\u0022Id\u0022:1,\u0022Text\u0022:\u0022aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0022}",
+        "RemainingBody": "{\u0022Id\u0022:2,\u0022Text\u0022:\u0022last row\u0022}\n"
+      }
+    },
+    {
+      "Name": "HTTP consumer closes stream: RequestAborted stops producer",
+      "Status": "PASS",
+      "Evidence": {
+        "RequestAbortedObserved": true,
+        "ProducerReleaseNotUsed": true
+      }
+    },
+    {
+      "Name": "HTTP producer failure leaves a valid prefix and a failed transfer",
+      "Status": "PASS",
+      "Evidence": {
+        "FirstRecord": "{\u0022Id\u0022:1,\u0022Text\u0022:\u0022aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\u0022}",
+        "ValidPrefixIsNotWholeExport": true,
+        "InitialStatusCode": 200,
+        "TransferError": "IOException: Unable to read data from the transport connection: Connection reset by peer."
+      }
+    }
+  ],
+  "Scope": "Pinned .NET 11 RC1, local Kestrel HTTP/1.1, Stream/PipeWriter framing, two buffer sizes and 200-character payload, consumer stream closure and injected producer failure. No proxy/compression/CDN, throughput, per-record universal flush or production network claim."
+}

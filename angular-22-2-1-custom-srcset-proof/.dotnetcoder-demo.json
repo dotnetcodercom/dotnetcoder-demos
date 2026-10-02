@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-1737-C02",
+  "repository_path": "angular-22-2-1-custom-srcset-proof",
+  "source_sha256": "ce00e52ef6a2c0cb851bc577fe6d3c0df0c45ed97beefcce2fa2788ac9d23f2d",
+  "article_url": "https://dotnetcoder.com/custom-ngoptimizedimage-srcset-angular-22-2-1/",
+  "files": [
+    ".gitignore",
+    "build-matrix.mjs",
+    "build.mjs",
+    "evidence/angular-22.2.0-dpr-1.png",
+    "evidence/angular-22.2.0-dpr-2.png",
+    "evidence/angular-22.2.1-dpr-1.png",
+    "evidence/angular-22.2.1-dpr-2.png",
+    "evidence/receipt.json",
+    "fixture.ts",
+    "images/fallback.png",
+    "images/generated-100.png",
+    "images/generated-200.png",
+    "images/signed-a.png",
+    "images/signed-b.png",
+    "LICENSE",
+    "package-lock.json",
+    "package.json",
+    "README.md",
+    "verify.mjs",
+    "Verify.ps1",
+    "versions/22.2.0/package-lock.json",
+    "versions/22.2.0/package.json",
+    "versions/22.2.1/package-lock.json",
+    "versions/22.2.1/package.json"
+  ]
+}

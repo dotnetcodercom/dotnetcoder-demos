@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-1737-C01",
+  "repository_path": "dotnet-11-json-lines-export-proof",
+  "source_sha256": "4429f87717f533168e72ec42df412b43d6a0ae6f14ef7d3c610a1e4dff4086b3",
+  "article_url": "https://dotnetcoder.com/dotnet-11-json-lines-exports/",
+  "files": [
+    ".gitignore",
+    "evidence/receipt.json",
+    "global.json",
+    "JsonLinesProof.csproj",
+    "LICENSE",
+    "Program.cs",
+    "README.md",
+    "Verify.ps1"
+  ]
+}
