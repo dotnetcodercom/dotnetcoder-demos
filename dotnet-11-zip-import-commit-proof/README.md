@@ -2,9 +2,11 @@
 
 This example stages every ZIP record, reads entries to EOF and saves one local JSON file only after the whole batch succeeds. A separate proof demonstrates why catching a checksum exception around per-entry writes can leave an earlier record saved.
 
-Prerequisites: Python 3 and .NET SDK **11.0.100-rc.1.26425.128**, pinned in `global.json`. Tested runtime: **11.0.0-rc.1.26425.128**, on Ubuntu. .NET 11 is prerelease. These projects have no third-party package, cloud resource, credential or model requirement.
+## Prerequisites
 
-## Run the exact article example
+Python 3 and .NET SDK **11.0.100-rc.1.26425.128**, pinned in `global.json`. Tested runtime: **11.0.0-rc.1.26425.128**, on Ubuntu. .NET 11 is prerelease. These projects have no third-party package, cloud resource, credential or model requirement.
+
+## Run
 
 From this demo directory:
 
@@ -64,3 +66,7 @@ Primary sources:
 - https://learn.microsoft.com/en-us/dotnet/standard/io/zip-tar-best-practices
 
 Sample source is MIT licensed; framework and runtime dependencies retain their own licenses.
+
+## Article
+
+Planned article URL (not published yet): https://dotnetcoder.com/dotnet-11-zip-imports-validate-before-commit/

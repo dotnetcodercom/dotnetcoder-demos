@@ -2,9 +2,11 @@
 
 This reproduction compares **Microsoft.Agents.AI 1.21.0 and 1.22.0** on one shared function-invoking `IChatClient`. The fake client deliberately returns an unadvertised tool name, and harmless callback counters show whether the invocation pipeline executes it. The fixed version is a tested comparison point, not a claim about the latest release or complete authorization.
 
-Prerequisites: Python 3, .NET SDK **11.0.100-rc.1.26425.128** (`global.json`) and internet for the first NuGet restore. Tested runtime: **11.0.0-rc.1.26425.128**, Ubuntu. Both package runs resolved **Microsoft.Extensions.AI 10.10.0**. No live model, account, credential, cloud resource or consequential tool is used.
+## Prerequisites
 
-## Run the exact article example
+Python 3, .NET SDK **11.0.100-rc.1.26425.128** (`global.json`) and internet for the first NuGet restore. Tested runtime: **11.0.0-rc.1.26425.128**, Ubuntu. Both package runs resolved **Microsoft.Extensions.AI 10.10.0**. No live model, account, credential, cloud resource or consequential tool is used.
+
+## Run
 
 ```sh
 cd article-example
@@ -64,3 +66,7 @@ Primary sources:
 - https://github.com/microsoft/agent-framework/blob/dotnet-1.22.0/dotnet/src/Microsoft.Agents.AI/ChatClient/ChatClientExtensions.cs
 
 Sample source is MIT licensed; NuGet dependencies retain their own licenses.
+
+## Article
+
+Planned article URL (not published yet): https://dotnetcoder.com/agent-framework-tool-isolation-dotnet/
