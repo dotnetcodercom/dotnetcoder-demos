@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "checks": 11,
+  "program_sha256": "2c83a27f1e4562743cca5d8da290f2b90ba73544d450bfd65243b23c5e09a360",
+  "scope": "Exact article console program; stored ZIP fixtures; local single-file state and pending cleanup. No cancellation or injected fault controls in this example.",
+  "results": [
+    {
+      "name": "valid",
+      "exit_code": 0,
+      "error": null,
+      "state_unchanged": false,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "corrupt-first",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "corrupt-last",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "invalid-record-last",
+      "exit_code": 1,
+      "error": "FormatException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "duplicate-existing-key",
+      "exit_code": 1,
+      "error": "ArgumentException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "invalid-utf8",
+      "exit_code": 1,
+      "error": "DecoderFallbackException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "entry-size-limit",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "aggregate-size-limit",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "entry-count-limit",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "empty-archive",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "directory-entry",
+      "exit_code": 1,
+      "error": "InvalidDataException",
+      "state_unchanged": true,
+      "temp_clean": true,
+      "pass": true
+    }
+  ]
+}

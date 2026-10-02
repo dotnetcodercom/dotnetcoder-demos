@@ -1,0 +1,654 @@
+{
+  "agentAssembly": "1.21.0.0",
+  "runtime": ".NET 11.0.0-rc.1.26425.128",
+  "matrix": [
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "normal",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": true
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 0,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 0,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 0,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "unadvertised-cross-agent-call",
+      "injectSharedTools": false,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 1,
+      "privilegedCalls": 0,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": false,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": false,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": true,
+      "concurrent": false,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": false,
+      "sharedToolsAfterConstruction": [
+        "privileged_write"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    },
+    {
+      "scenario": "injected-control",
+      "injectSharedTools": true,
+      "streaming": true,
+      "concurrent": true,
+      "reverseConstruction": true,
+      "sharedToolsAfterConstruction": [
+        "public_read"
+      ],
+      "publicCalls": 0,
+      "privilegedCalls": 1,
+      "observations": [
+        {
+          "reader": "PRIVILEGED",
+          "names": [
+            "privileged_write"
+          ]
+        },
+        {
+          "reader": "PUBLIC",
+          "names": [
+            "public_read"
+          ]
+        }
+      ],
+      "isolated": false
+    }
+  ]
+}

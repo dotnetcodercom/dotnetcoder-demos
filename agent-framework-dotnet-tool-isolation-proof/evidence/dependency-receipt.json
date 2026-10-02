@@ -1,0 +1,108 @@
+{
+  "1.21.0": {
+    "libraries": {
+      "Google.Protobuf/3.30.2": {
+        "sha512": "Y2aOVLIt75yeeEWigg9V9YnjsEm53sADtLGq0gLhwaXpk3iu8tYSoauolyhenagA2sWno2TQ2WujI0HQd6s1Vw==",
+        "type": "package"
+      },
+      "Microsoft.Agents.AI/1.21.0": {
+        "sha512": "uzfyObaUtObJo1VFvV+DA0WI4T16RwPhVkbkhSFpY3gomEKizmmVeZVyuwPwJ85fANalmjrnAqb37b/SCBPFtA==",
+        "type": "package"
+      },
+      "Microsoft.Agents.AI.Abstractions/1.21.0": {
+        "sha512": "ukIDpnpLml5jhv4c+kkPfyd6IxcfBp8mG2OT88noq0qqr6+gfciHZSmk7cIw7RZesWLFfBrMwfhfQJVSFP6ASg==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI/10.10.0": {
+        "sha512": "XKvtDUD3KySkvA5UpS+UF67M5rcqiXjAQchTZZ26WnavVKXxwlUTVdK/Ju0tc/25+16AVUdNl8cnVVGX/tx03A==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI.Abstractions/10.10.0": {
+        "sha512": "frBHj2ckpevA+KdDLikxv8oxGPrJiyTvaiblYp+vtVEt0q6J73XP5m2SICm86nFK6rl+L1GCKxIy4S5Lb3p2kQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI.Evaluation/10.10.0": {
+        "sha512": "YXdqOSHl8X1/Vkmuu6QoV330FQ7aiYtNDqIUIiICSDd0HMx0No9D/ZWo0ocOPXd9bk00YQQfyK5HKcgRnRmQbQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.Compliance.Abstractions/10.10.0": {
+        "sha512": "Sh3ujDRJpCMNY4x+43ljCROt4qBOoWfsL8l816RPYZS1S+Tw277r5002rbB15Sh6hFcCT8mGYBO7NtpfSYrQ0Q==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/10.0.12": {
+        "sha512": "45cV+UeI0chPAIXrx9Wv7K4PJXuuIR2pnOur5MOAo6kOFclBHSLLDrvGAxMfWRMtUvpv/kQZkxlgaUN56jwzSQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.ObjectPool/10.0.12": {
+        "sha512": "opBULzn9F7ZOL8EoFuqM2QjI6x9AG04DFNdnU2ky/kI4aUzbiXEfuy9jvCuu3D/ieccuDHTlalyC62esPD8wGg==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.VectorData.Abstractions/10.10.0": {
+        "sha512": "bZdR7QbdLLqmc9xPJIiD5U6H678xyv8eMATjQ0SmH7OZyi+/12G/nFAGCE6DNG22q76YNwkXo+V7GMyUckjjgw==",
+        "type": "package"
+      },
+      "Microsoft.ML.Tokenizers/2.0.0": {
+        "sha512": "+b8lT4cLLO/sBR2hjvE/qG6qrZG15h7/PBvnIrzTh4xDaAxdHUY6449rC+1pHzQUsBiCHZVbj+VMn+xS0sL7TA==",
+        "type": "package"
+      },
+      "System.Numerics.Tensors/10.0.12": {
+        "sha512": "17brFrnQHV/XMMazXNqFq4GkvzWy8yzDPo5Gb8TT8zJtMFbUqDycOCyPCp9F+eMc4L75kcCKRZqaeBHMwLCL9Q==",
+        "type": "package"
+      }
+    },
+    "agent_dll_sha256": "785052e3ef198d847f03651c2a628e19d21d4df42206a7699c78e261bd0a38bb"
+  },
+  "1.22.0": {
+    "libraries": {
+      "Google.Protobuf/3.30.2": {
+        "sha512": "Y2aOVLIt75yeeEWigg9V9YnjsEm53sADtLGq0gLhwaXpk3iu8tYSoauolyhenagA2sWno2TQ2WujI0HQd6s1Vw==",
+        "type": "package"
+      },
+      "Microsoft.Agents.AI/1.22.0": {
+        "sha512": "YdQJbL47n8PJmTGCD6DzapD2TQiCfI1f/669ECcHsKw1po3WhTq2lZoO3X7PJ6sZSGE/I2RReJ/hTGwtBZ7WTA==",
+        "type": "package"
+      },
+      "Microsoft.Agents.AI.Abstractions/1.22.0": {
+        "sha512": "ZgDJUP+wuo1k2rMXg7wtKGbx0A0zo/q0k2juoKQ2EIbdhH8gdSwwNjQ9Zew3u3UmBuRWgH/4EMsCQrc7vx2x1g==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI/10.10.0": {
+        "sha512": "XKvtDUD3KySkvA5UpS+UF67M5rcqiXjAQchTZZ26WnavVKXxwlUTVdK/Ju0tc/25+16AVUdNl8cnVVGX/tx03A==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI.Abstractions/10.10.0": {
+        "sha512": "frBHj2ckpevA+KdDLikxv8oxGPrJiyTvaiblYp+vtVEt0q6J73XP5m2SICm86nFK6rl+L1GCKxIy4S5Lb3p2kQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.AI.Evaluation/10.10.0": {
+        "sha512": "YXdqOSHl8X1/Vkmuu6QoV330FQ7aiYtNDqIUIiICSDd0HMx0No9D/ZWo0ocOPXd9bk00YQQfyK5HKcgRnRmQbQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.Compliance.Abstractions/10.10.0": {
+        "sha512": "Sh3ujDRJpCMNY4x+43ljCROt4qBOoWfsL8l816RPYZS1S+Tw277r5002rbB15Sh6hFcCT8mGYBO7NtpfSYrQ0Q==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/10.0.12": {
+        "sha512": "45cV+UeI0chPAIXrx9Wv7K4PJXuuIR2pnOur5MOAo6kOFclBHSLLDrvGAxMfWRMtUvpv/kQZkxlgaUN56jwzSQ==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.ObjectPool/10.0.12": {
+        "sha512": "opBULzn9F7ZOL8EoFuqM2QjI6x9AG04DFNdnU2ky/kI4aUzbiXEfuy9jvCuu3D/ieccuDHTlalyC62esPD8wGg==",
+        "type": "package"
+      },
+      "Microsoft.Extensions.VectorData.Abstractions/10.10.0": {
+        "sha512": "bZdR7QbdLLqmc9xPJIiD5U6H678xyv8eMATjQ0SmH7OZyi+/12G/nFAGCE6DNG22q76YNwkXo+V7GMyUckjjgw==",
+        "type": "package"
+      },
+      "Microsoft.ML.Tokenizers/2.0.0": {
+        "sha512": "+b8lT4cLLO/sBR2hjvE/qG6qrZG15h7/PBvnIrzTh4xDaAxdHUY6449rC+1pHzQUsBiCHZVbj+VMn+xS0sL7TA==",
+        "type": "package"
+      },
+      "System.Numerics.Tensors/10.0.12": {
+        "sha512": "17brFrnQHV/XMMazXNqFq4GkvzWy8yzDPo5Gb8TT8zJtMFbUqDycOCyPCp9F+eMc4L75kcCKRZqaeBHMwLCL9Q==",
+        "type": "package"
+      }
+    },
+    "agent_dll_sha256": "dd22f182269435bae9c5e323afabf9fcad837668801511f8cae7331d9f09ce2f"
+  }
+}

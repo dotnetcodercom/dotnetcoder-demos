@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+**/work/
+**/verification-work/
+**/__pycache__/
+**/receipt.json
+**/verification-receipt.json
+*.pending
+article-example/valid.zip
+article-example/corrupt-last.zip
+article-example/records.json

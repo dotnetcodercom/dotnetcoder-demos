@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "checks": 6,
+  "scope": "Exact article source, deterministic fake client, RunAsync only; no live provider.",
+  "rows": [
+    {
+      "version": "1.21.0",
+      "scenario": "cross-agent",
+      "expected": "public=0; privileged=1",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.21.0.0",
+        "public=0; privileged=1"
+      ]
+    },
+    {
+      "version": "1.21.0",
+      "scenario": "normal",
+      "expected": "public=1; privileged=0",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.21.0.0",
+        "public=1; privileged=0"
+      ]
+    },
+    {
+      "version": "1.21.0",
+      "scenario": "injected-shared-control",
+      "expected": "public=0; privileged=1",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.21.0.0",
+        "public=0; privileged=1"
+      ]
+    },
+    {
+      "version": "1.22.0",
+      "scenario": "cross-agent",
+      "expected": "public=0; privileged=0",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.22.0.0",
+        "public=0; privileged=0"
+      ]
+    },
+    {
+      "version": "1.22.0",
+      "scenario": "normal",
+      "expected": "public=1; privileged=0",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.22.0.0",
+        "public=1; privileged=0"
+      ]
+    },
+    {
+      "version": "1.22.0",
+      "scenario": "injected-shared-control",
+      "expected": "public=0; privileged=1",
+      "resolved_dependency": "Microsoft.Extensions.AI/10.10.0",
+      "status": "PASS",
+      "observed_lines": [
+        "Advertised=public_read",
+        "AgentAssembly=1.22.0.0",
+        "public=0; privileged=1"
+      ]
+    }
+  ]
+}

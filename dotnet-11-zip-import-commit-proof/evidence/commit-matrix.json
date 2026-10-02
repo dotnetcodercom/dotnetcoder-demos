@@ -1,0 +1,70 @@
+{
+  "runtime": ".NET 11.0.0-rc.1.26425.128",
+  "os": "Ubuntu 24.04.3 LTS",
+  "scope": "Synchronous ZIP_STORED reads; single local JSON state file replaced on the same filesystem. No database, HTTP endpoint, encryption, crash/power-loss guarantee or concurrent importer verified.",
+  "cases": [
+    {
+      "name": "valid",
+      "outcome": "committed",
+      "validated_entries": 2,
+      "state_changed": true,
+      "record_count": 3,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "corrupt-first",
+      "outcome": "InvalidDataException",
+      "validated_entries": 0,
+      "state_changed": false,
+      "record_count": 1,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "corrupt-last",
+      "outcome": "InvalidDataException",
+      "validated_entries": 1,
+      "state_changed": false,
+      "record_count": 1,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "cancel-between-entries",
+      "outcome": "OperationCanceledException",
+      "validated_entries": 1,
+      "state_changed": false,
+      "record_count": 1,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "fail-before-replace",
+      "outcome": "IOException",
+      "validated_entries": 2,
+      "state_changed": false,
+      "record_count": 1,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "invalid-record-last",
+      "outcome": "FormatException",
+      "validated_entries": 1,
+      "state_changed": false,
+      "record_count": 1,
+      "temp_clean": true,
+      "pass": true
+    },
+    {
+      "name": "unsafe-corrupt-last",
+      "outcome": "InvalidDataException",
+      "validated_entries": 1,
+      "state_changed": true,
+      "record_count": 2,
+      "temp_clean": true,
+      "pass": true
+    }
+  ]
+}
