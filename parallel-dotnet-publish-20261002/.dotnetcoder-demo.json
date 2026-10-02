@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-1016-C01",
+  "repository_path": "parallel-dotnet-publish-20261002",
+  "source_sha256": "f16645bcc5812abf182e6939039da6fdaadb556936c7c536aef424a8029ae339",
+  "article_url": "https://dotnetcoder.com/parallel-dotnet-publish-artifact-isolation/",
+  "files": [
+    ".gitignore",
+    "global.json",
+    "LICENSE",
+    "NuGet.Config",
+    "Proof-Common.ps1",
+    "README.md",
+    "Runner/Program.cs",
+    "Runner/Runner.csproj",
+    "src/ServiceA/Program.cs",
+    "src/ServiceA/ServiceA.csproj",
+    "src/ServiceB/Program.cs",
+    "src/ServiceB/ServiceB.csproj",
+    "src/Shared/BuildMarker.cs",
+    "src/Shared/Shared.csproj",
+    "Verify-ParallelPublish.ps1"
+  ]
+}

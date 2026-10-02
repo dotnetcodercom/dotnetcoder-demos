@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DncFlavor Condition="'$(DncFlavor)' == ''">UNSET</DncFlavor>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>DncFlavor</_Parameter1>
+      <_Parameter2>$(DncFlavor)</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>
