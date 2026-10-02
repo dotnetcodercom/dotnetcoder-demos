@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-2057-C01",
+  "repository_path": "dotnet-11-zip-import-commit-proof",
+  "source_sha256": "50d29d81dcf23996eed9b38a337f96496a8bbb01c4ddeae4c41ab7933a1d1a57",
+  "article_url": "https://dotnetcoder.com/dotnet-11-zip-imports-validate-before-commit/",
+  "files": [
+    ".gitignore",
+    "article-example/make-fixtures.py",
+    "article-example/NuGet.Config",
+    "article-example/Program.cs",
+    "article-example/verify-example.py",
+    "article-example/ZipImport.csproj",
+    "evidence/article-example.json",
+    "evidence/commit-matrix.json",
+    "evidence/read-boundary.json",
+    "global.json",
+    "LICENSE",
+    "README.md",
+    "zip-commit-proof/corrupt-first.zip",
+    "zip-commit-proof/corrupt-last.zip",
+    "zip-commit-proof/invalid-record.zip",
+    "zip-commit-proof/NuGet.Config",
+    "zip-commit-proof/Program.cs",
+    "zip-commit-proof/Proof.csproj",
+    "zip-commit-proof/valid.zip",
+    "zip-proof/corrupt.zip",
+    "zip-proof/NuGet.Config",
+    "zip-proof/Program.cs",
+    "zip-proof/Proof.csproj",
+    "zip-proof/valid.zip"
+  ]
+}

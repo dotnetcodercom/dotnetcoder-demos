@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-2057-C02",
+  "repository_path": "agent-framework-dotnet-tool-isolation-proof",
+  "source_sha256": "5f2564e530d7479b8cfaac7a78279da2713276b4d5e319371956413e68a323d2",
+  "article_url": "https://dotnetcoder.com/agent-framework-tool-isolation-dotnet/",
+  "files": [
+    ".gitignore",
+    "agent-proof/1.21.0/Proof.csproj",
+    "agent-proof/1.22.0/Proof.csproj",
+    "agent-proof/NuGet.Config",
+    "agent-proof/Program.cs",
+    "article-example/AgentToolProbe.csproj",
+    "article-example/NuGet.Config",
+    "article-example/Program.cs",
+    "article-example/verify-example.py",
+    "evidence/1.21.0-matrix.json",
+    "evidence/1.22.0-matrix.json",
+    "evidence/article-example.json",
+    "evidence/dependency-receipt.json",
+    "global.json",
+    "LICENSE",
+    "README.md"
+  ]
+}
