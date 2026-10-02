@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "candidate_id": "DNC-MANUAL-20261002-1016-C05",
+  "repository_path": "dotnet11-sequence-stream-20261002",
+  "source_sha256": "4b06b73144255d2135b9e34852fbb1324d65d7c683edf8293b8ba4d4a9d79a3f",
+  "article_url": "https://dotnetcoder.com/dotnet-11-readonlysequencestream-pipe-lifetime/",
+  "files": [
+    ".gitignore",
+    "global.json",
+    "LICENSE",
+    "NuGet.Config",
+    "Proof-Common.ps1",
+    "Proof/Program.cs",
+    "Proof/Proof.csproj",
+    "README.md",
+    "Verify-SequenceStream.ps1"
+  ]
+}
